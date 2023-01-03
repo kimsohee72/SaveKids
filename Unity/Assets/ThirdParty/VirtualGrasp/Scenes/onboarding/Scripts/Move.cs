@@ -7,8 +7,8 @@ public class Move : MonoBehaviour
 {
     public Transform m_character = null;
     public bool m_verticalOnly = false;
-    private Vector2 m_axisL = Vector2.zero;
-    private Vector2 m_axisR = Vector2.zero;
+    private Vector2 m_axisL = new Vector2(-2,1);
+    private Vector2 m_axisR = new Vector2(-2, 1);
     private Camera m_camera = null;
 
     void Start()
