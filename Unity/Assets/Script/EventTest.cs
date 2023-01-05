@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class EventTest : MonoBehaviour
 {
     public Animator anim;
+    public GameObject Run;
 
     public void buttonPush()
     {
@@ -14,7 +15,7 @@ public class EventTest : MonoBehaviour
     public void OnFirstHoverEntered()
     {
         Debug.Log($"{gameObject.name} - OnFirstHoverEntered");
-        
+
     }
 
     public void OnLastHoverExited()
@@ -46,10 +47,12 @@ public class EventTest : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} - OnSelectEntered");
         anim.SetBool("getit", true);
+        Run.GetComponent<Rotate>().enabled = false;
     }
 
     public void OnSelectExited()
     {
+        
         Debug.Log($"{gameObject.name} - OnSelectExited");
         anim.SetBool("dropit", true);
     }
