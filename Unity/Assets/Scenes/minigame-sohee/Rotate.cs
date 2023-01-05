@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+    public Animator anim;
+    public GameObject table;       //기준
+    public GameObject baby;
+    public float speed;             //회전 속도
     // Start is called before the first frame update
     void Start()
     {
@@ -13,12 +17,10 @@ public class Rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         
     }
-
-    public GameObject table;       //기준
-    public GameObject baby;
-    public float speed;             //회전 속도
+    
 
     void OrbitAround()
     {
