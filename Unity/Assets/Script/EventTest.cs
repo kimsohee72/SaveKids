@@ -11,7 +11,10 @@ public class EventTest : MonoBehaviour
     {
         anim.SetBool("ButtonPush", true);
     }
-
+    public void start()
+    {
+        anim.SetBool("return", false);
+    }
     public void OnFirstHoverEntered()
     {
         Debug.Log($"{gameObject.name} - OnFirstHoverEntered");
