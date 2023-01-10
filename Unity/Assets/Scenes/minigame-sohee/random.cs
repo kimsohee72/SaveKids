@@ -30,22 +30,23 @@ public class random : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(baby3.activeSelf == true)
+        
+        if ((anim1.GetCurrentAnimatorStateInfo(0).IsName("end") || anim2.GetCurrentAnimatorStateInfo(0).IsName("end")))
         {
-            
+
             if (b > a)
             {
                 baby2.SetActive(false);
                 baby1.SetActive(false);
                 baby3.SetActive(false);
             }
-        }
-        if ((anim1.GetCurrentAnimatorStateInfo(0).IsName("end") || anim2.GetCurrentAnimatorStateInfo(0).IsName("end")))
-        {
-            baby2.SetActive(false);
-            baby1.SetActive(false);
-            baby3.SetActive(true);
-            Invoke("LaunchProjectile", 3);
+            else
+            {
+                baby2.SetActive(false);
+                baby1.SetActive(false);
+                baby3.SetActive(true);
+                Invoke("LaunchProjectile", 3);
+            }
         }
         
     }

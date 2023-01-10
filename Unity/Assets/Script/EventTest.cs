@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class EventTest : MonoBehaviour
 {
     public Animator anim;
+    public GameObject baby;
     public GameObject Run;
 
     public void buttonPush()
@@ -58,6 +59,8 @@ public class EventTest : MonoBehaviour
         
         Debug.Log($"{gameObject.name} - OnSelectExited");
         anim.SetBool("dropit", true);
+        baby.transform.position = new Vector3(-3, 0, 10);
+        baby.transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
     public void OnActivated()

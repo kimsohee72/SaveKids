@@ -1049,15 +1049,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.04
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.122
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1497,6 +1497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 266061759}
+  baby: {fileID: 266061755}
   Run: {fileID: 266061755}
 --- !u!114 &266061764
 MonoBehaviour:
@@ -1516,7 +1517,7 @@ MonoBehaviour:
   baby1: {fileID: 1537909130}
   baby2: {fileID: 266061755}
   baby3: {fileID: 1053897562}
-  a: 0
+  a: 2
 --- !u!1001 &339293587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4492,15 +4493,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.04
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.122
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4665,15 +4666,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.04
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.122
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 088b319163c131b4d8145a42848852e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5180,6 +5181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1537909133}
+  baby: {fileID: 1537909130}
   Run: {fileID: 0}
 --- !u!114 &1537909132
 MonoBehaviour:
@@ -5507,7 +5509,7 @@ MonoBehaviour:
   baby1: {fileID: 1537909130}
   baby2: {fileID: 266061755}
   baby3: {fileID: 1053897562}
-  a: 0
+  a: 2
 --- !u!1 &1544074858
 GameObject:
   m_ObjectHideFlags: 0
