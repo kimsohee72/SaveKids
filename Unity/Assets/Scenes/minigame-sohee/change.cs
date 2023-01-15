@@ -17,7 +17,6 @@ public class change : MonoBehaviour
     {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("lie_idle1"))
         {
-            Debug.Log($"{gameObject.name} lie_cry");
             lie.transform.rotation = Quaternion.Euler(0, 0, 0);
 
         }

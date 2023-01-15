@@ -13,6 +13,7 @@ public class random : MonoBehaviour
     public GameObject baby3;
     public int a;
     static int b;
+    static int n=-1;
     
     // Start is called before the first frame update
     void Start()
@@ -54,9 +55,23 @@ public class random : MonoBehaviour
     void LaunchProjectile()
     {
         Debug.Log($"b : {b}");
-        b = b +1;
+        b = b + 1;
         baby3.SetActive(false);
-        int n = Random.Range(0, 2);
+        if (n == -1)
+        {
+            n = Random.Range(0, 2);
+        }
+        else
+        {
+            if (n == 0)
+            {
+                n = 1;
+            }
+            else
+            {
+                n = 0;
+            }
+        }
         Debug.Log($"Random : {n}");
         if (n == 1)
         {

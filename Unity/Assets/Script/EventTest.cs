@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.XR.Interaction.Toolkit;
+
 
 public class EventTest : MonoBehaviour
 {
@@ -61,6 +63,8 @@ public class EventTest : MonoBehaviour
         anim.SetBool("dropit", true);
         baby.transform.position = new Vector3(-3, 0, 10);
         baby.transform.rotation = Quaternion.Euler(0, 180, 0);
+        baby.GetComponent<XRGrabInteractable>().enabled = false;
+
     }
 
     public void OnActivated()
