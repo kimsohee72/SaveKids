@@ -6611,7 +6611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8311242312700400088, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_text
-      value: "\uD78C\uD2B8\n"
+      value: HINT
       objectReference: {fileID: 0}
     - target: {fileID: 8506184047589030229, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_AnchoredPosition.y
