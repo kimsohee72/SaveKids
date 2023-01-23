@@ -15,31 +15,28 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/level select/Up1 HWA Level.unity
-    guid: 61e0b8109d7e6854a8a3889da8553d14
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/level select/Up1 YEOL Level.unity
-    guid: fddcfcdef6b3fb04cabffe56b1f706fd
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/level select/Up1 HAIM Level.unity
-    guid: 1e6379718baa00f46ab774c767147a28
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/level select/Up1 CPR Level.unity
-    guid: 7409afb1a52e3954091796d187e85e70
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/level select/Under1 YEOL Level.unity
-    guid: fce8dc0e0baf64543819bf788629c3e5
-  - enabled: 0
-    path: Assets/Scenes/level select/Under1 HWA Level.unity
-    guid: 24ffa54f99b9121469e9130ef183a6de
-  - enabled: 0
-    path: Assets/Scenes/level select/Under1 HAIM Level.unity
-    guid: 4013411c2c2bc864dbb81e78fe406f6c
-  - enabled: 0
-    path: Assets/ThirdParty/VirtualGrasp/Scenes/onboarding/VG_Onboarding.unity
-    guid: fd76f8b8cc5f2274f89e28e999e449d3
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/minigame-sohee/minigame4.unity
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/level select/no.3.unity
     guid: fcc6a128eb92aa14ba2de15117bb5925
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 808c32e1eb655074999d4f261345730f, type: 2}
