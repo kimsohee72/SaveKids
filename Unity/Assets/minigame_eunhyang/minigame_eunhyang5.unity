@@ -1594,7 +1594,7 @@ GameObject:
   - component: {fileID: 863166881}
   - component: {fileID: 863166880}
   - component: {fileID: 863166883}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: LeftHand Direct Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2300,7 +2300,7 @@ GameObject:
   - component: {fileID: 1121653035}
   - component: {fileID: 1121653034}
   - component: {fileID: 1121653037}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: RightHand Direct Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3459,6 +3459,10 @@ PrefabInstance:
     - target: {fileID: 1721677125038691502, guid: ea51909ce80d5ef4cadf6136c3cef24c, type: 3}
       propertyPath: m_LocalPosition.z
       value: 9.762
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066994542282313236, guid: ea51909ce80d5ef4cadf6136c3cef24c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2066994542282313236, guid: ea51909ce80d5ef4cadf6136c3cef24c, type: 3}
       propertyPath: m_TagString
