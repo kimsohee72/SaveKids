@@ -44,6 +44,7 @@ public class HandController : MonoBehaviour
     public void OnFirstSelectEntered()
     {
         Debug.Log($"{gameObject.name} - OnFirstSelectEntered");
+        baby.GetComponent<AudioSource>().enabled = false;
     }
 
     public void OnLastSelectExited()
@@ -56,6 +57,7 @@ public class HandController : MonoBehaviour
         Debug.Log($"{gameObject.name} - OnSelectEntered");
         anim.SetBool("getit", true);
         Run.GetComponent<Rotate>().enabled = false;
+        baby.GetComponent<AudioSource>().enabled = false;
     }
 
     public void OnSelectExited()
