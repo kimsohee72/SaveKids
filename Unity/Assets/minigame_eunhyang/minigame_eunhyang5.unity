@@ -803,6 +803,7 @@ Transform:
   m_Father: {fileID: 22423425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
 --- !u!1001 &292661517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1043,6 +1044,7 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &432418253
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

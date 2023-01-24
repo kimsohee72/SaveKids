@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class istriggered_carrot5 : MonoBehaviour
 {
+    public GameObject guideline;
+    public GameObject ThisCarrot;
+    public GameObject nextCarrot;
     public bool carrot5;
 
     // Start is called before the first frame update
