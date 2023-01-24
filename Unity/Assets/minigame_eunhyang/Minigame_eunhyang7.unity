@@ -1925,6 +1925,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114640, guid: deed1b89f12656745bedab2d10b1eb03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 149594, guid: deed1b89f12656745bedab2d10b1eb03, type: 3}
       propertyPath: m_Name
       value: Baby (2)
@@ -1993,6 +1997,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.022757
       objectReference: {fileID: 0}
+    - target: {fileID: 2352196, guid: deed1b89f12656745bedab2d10b1eb03, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8f6c87c1304fde94ca666ef81478b078, type: 2}
     - target: {fileID: 9570344, guid: deed1b89f12656745bedab2d10b1eb03, type: 3}
       propertyPath: m_Controller
       value: 
@@ -2004,7 +2012,15 @@ PrefabInstance:
     - target: {fileID: 13710206, guid: deed1b89f12656745bedab2d10b1eb03, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f0b850713e714274eaca338d508b4c12, type: 2}
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
+    - target: {fileID: 13721040, guid: deed1b89f12656745bedab2d10b1eb03, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
+    - target: {fileID: 13721040, guid: deed1b89f12656745bedab2d10b1eb03, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
     - target: {fileID: 13744064, guid: deed1b89f12656745bedab2d10b1eb03, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
