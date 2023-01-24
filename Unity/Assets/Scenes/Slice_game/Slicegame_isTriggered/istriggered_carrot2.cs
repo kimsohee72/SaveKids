@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class istriggered_carrot2 : MonoBehaviour
 {
-    public GameObject guideline;
-    public GameObject ThisCarrot;
-    public GameObject nextCarrot;
+    public GameObject guideline2;
+    public GameObject ThisCarrot2;
+    public GameObject nextCarrot2;
     public bool carrot2;
 
     // Start is called before the first frame update
     void Start()
     {
-        ThisCarrot.tag = "Untagged";
-        nextCarrot.tag = "Untagged";
-        guideline.SetActive(false);
+        ThisCarrot2.tag = "NotSlice";
+        nextCarrot2.tag = "NotSlice";
+        guideline2.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (ThisCarrot.tag == "Slice" && nextCarrot.tag == "Untagged") ;
+        if (ThisCarrot2.tag == "Slice" && nextCarrot2.tag == "NotSlice")
         {
-            guideline.SetActive(true);
+            guideline2.SetActive(true);
         }
     }
 
@@ -31,8 +31,9 @@ public class istriggered_carrot2 : MonoBehaviour
         if(col.gameObject.tag == "Knife")
 		{
             carrot2 = true;
-            guideline.SetActive(false);
-            nextCarrot.tag = "Slice";
+            guideline2.SetActive(false);
+            nextCarrot2.tag = "Slice";
+            nextCarrot2.layer = 6;
         }
 	}
 }

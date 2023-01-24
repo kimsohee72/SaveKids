@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class istriggered_carrot5 : MonoBehaviour
 {
-    public GameObject guideline;
-    public GameObject ThisCarrot;
-    public GameObject nextCarrot;
+    public GameObject guideline5;
+    public GameObject ThisCarrot5;
+    public GameObject nextCarrot5;
     public bool carrot5;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ThisCarrot5.tag = "NotSlice";
+        nextCarrot5.tag = "NotSlice";
+        guideline5.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (ThisCarrot5.tag == "Slice" && nextCarrot5.tag == "NotSlice")
+        {
+            guideline5.SetActive(true);
+        }
     }
 
     void OnTriggerEnter(Collider col)
@@ -26,6 +31,9 @@ public class istriggered_carrot5 : MonoBehaviour
         if(col.gameObject.tag == "Knife")
 		{
             carrot5 = true;
-		}
+            guideline5.SetActive(false);
+            nextCarrot5.tag = "Slice";
+            nextCarrot5.layer = 6;
+        }
 	}
 }

@@ -9,13 +9,13 @@ public class istriggered_carrot8 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnTriggerEnter(Collider col)
@@ -23,6 +23,6 @@ public class istriggered_carrot8 : MonoBehaviour
         if(col.gameObject.tag == "Knife")
 		{
             carrot8 = true;
-		}
+        }
 	}
 }
