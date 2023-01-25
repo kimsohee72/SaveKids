@@ -5,6 +5,7 @@ using TMPro;
 
 public class cheese : MonoBehaviour
 {
+    public GameManager gameManager;
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
@@ -34,6 +35,7 @@ public class cheese : MonoBehaviour
             Debug.Log("near");
             info.text = "치즈는 가까이 두어도 괜찮아요!";
             info.color = new Color(0, 0, 1, 1);
+            gameManager.cheese = true;
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {

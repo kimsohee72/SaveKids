@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int point;
+    public bool apple, beef, banana, blueberry, bread, carrot, cheese, cherry, rice, watermelon;
     public bool coin, battery, chess, bell, ring, block;
     GameObject Finish;
 
     void FixedUpdate()
     {
         Finish = GameObject.FindGameObjectWithTag("Finish");
-        if(point >= 6)
+
+        if (apple == true && beef == true && blueberry == true && banana == true && bread == true && carrot == true && cheese == true && rice == true && watermelon == true)
         {
-            //Finish.SetActive(true);
-            Debug.Log("끝");
+            Debug.Log("3번 끝");
         }
 
-        if(coin == true && battery == true && chess == true && bell == true && ring == true && block == true)
+        if (coin == true && battery == true && chess == true && bell == true && ring == true && block == true)
         {
             Debug.Log("6번 끝");
         }

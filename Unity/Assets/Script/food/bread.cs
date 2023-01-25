@@ -5,6 +5,7 @@ using TMPro;
 
 public class bread : MonoBehaviour
 {
+    public GameManager gameManager;
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
@@ -60,6 +61,7 @@ public class bread : MonoBehaviour
             //near_clicked();
             info.text = "½Ä»§Àº °¡±îÀÌ µÎ¾îµµ ±¦Âú¾Æ¿ä!";
             info.color = new Color(0, 0, 1, 1);
+            gameManager.bread = true;
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {

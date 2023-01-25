@@ -5,6 +5,7 @@ using TMPro;
 
 public class rice : MonoBehaviour
 {
+    GameManager gameManager;
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
@@ -34,6 +35,7 @@ public class rice : MonoBehaviour
             Debug.Log("near");
             info.text = "ÁÖ¸Ô¹äÀº °¡±îÀÌ µÎ¾îµµ ±¦Âú¾Æ¿ä!";
             info.color = new Color(0, 0, 1, 1);
+            gameManager.rice = true;
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {
