@@ -42,7 +42,7 @@ public class cherry : MonoBehaviour
             info.text = "체리는 멀리 두어야 합니다!";
             info.color = new Color(0, 0, 1, 1);
 
-            gameManager.point += 1;
+            gameManager.cherry = true;
         }
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class block : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class block : MonoBehaviour
     public LayerMask worldLayer;
     Ray ray;
     int near_num;
+    TMP_Text list;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
+        list = GameObject.Find("list_block").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -25,11 +28,12 @@ public class block : MonoBehaviour
     {
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
 
-        if (Physics.Raycast(ray, 0.035f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.1f, 1 << near_num))
         {
             Debug.Log("good");
-
-            gameManager.point += 1;
+            gameManager.block = true;
+            list.text = "- ºí·Ï";
+            list.color = new Color(1, 0, 0, 1);
         }
     }
 }

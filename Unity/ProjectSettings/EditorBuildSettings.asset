@@ -29,15 +29,33 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/main/main.unity
+    guid: c1cb2fa069208fc47afad5f0aaf5612e
+  - enabled: 1
+    path: Assets/Scenes/EK/Mini1.unity
+    guid: e9d83cb2f286dfd448b1a5fe266c6325
+  - enabled: 1
+    path: Assets/minigame_eunhyang/minigame_eunhyang5.unity
+    guid: df8ed5861a223134fa5c4ccebd6315ac
+  - enabled: 1
+    path: Assets/minigame_eunhyang/Minigame_eunhyang7.unity
+    guid: 5898f9c1ff65f4b478f0d3edf2049a42
   - enabled: 1
     path: Assets/Scenes/level select/no.3.unity
     guid: fcc6a128eb92aa14ba2de15117bb5925
+  - enabled: 1
+    path: Assets/Scenes/level select/no.6.unity
+    guid: ca33f76a8c9adf146bfb024e2b8301f9
+  - enabled: 1
+    path: Assets/Scenes/minigame-sohee/minigame4.unity
+    guid: 2f6909e49ea5cdc4990087b5e0689d2f
+  - enabled: 1
+    path: Assets/Scenes/Slice_game/Slice_game.unity
+    guid: 5db53733e45a4b445b2fb6c14297a6fa
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 808c32e1eb655074999d4f261345730f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 99f34b2f308b2f6459a2552e448c7d81, type: 2}
