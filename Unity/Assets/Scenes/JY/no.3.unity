@@ -1865,6 +1865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1d6f6e0b84ead4294b15e8f14ce7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   worldLayer:
     serializedVersion: 2
     m_Bits: 1536
@@ -2240,6 +2241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec9217defcbaeb4bac4c8023a0518ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   worldLayer:
     serializedVersion: 2
     m_Bits: 1536
@@ -4164,7 +4166,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709847ba13428ef4881ac28e3e11cb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  apple: 0
+  beef: 0
+  banana: 0
+  blueberry: 0
+  bread: 0
+  carrot: 0
+  cheese: 0
+  cherry: 0
+  rice: 0
+  watermelon: 0
+  coin: 0
+  battery: 0
+  chess: 0
+  bell: 0
+  ring: 0
+  block: 0
 --- !u!4 &1863562090
 Transform:
   m_ObjectHideFlags: 0
@@ -4755,6 +4772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d20a885da6cfb4e9d5f83c1a2e0052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   worldLayer:
     serializedVersion: 2
     m_Bits: 1536
@@ -4873,7 +4891,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709847ba13428ef4881ac28e3e11cb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  apple: 0
+  beef: 0
+  banana: 0
+  blueberry: 0
+  bread: 0
+  carrot: 0
+  cheese: 0
+  cherry: 0
+  rice: 0
+  watermelon: 0
+  coin: 0
+  battery: 0
+  chess: 0
+  bell: 0
+  ring: 0
+  block: 0
 --- !u!1001 &3095035135790868163
 PrefabInstance:
   m_ObjectHideFlags: 0

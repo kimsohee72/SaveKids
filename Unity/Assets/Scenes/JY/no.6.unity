@@ -325,9 +325,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3434882310275320994, guid: f61e81d3d8563654a8e522d0816a3f7b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48bfe7c2be54d3d42a47cec3e805a7d5, type: 2}
     - target: {fileID: 3795368123542302071, guid: f61e81d3d8563654a8e522d0816a3f7b, type: 3}
       propertyPath: m_Name
-      value: Pizza Box Bottom
+      value: Box
       objectReference: {fileID: 0}
     - target: {fileID: 3795368123542302071, guid: f61e81d3d8563654a8e522d0816a3f7b, type: 3}
       propertyPath: m_Layer
@@ -439,7 +443,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709847ba13428ef4881ac28e3e11cb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: 0
+  apple: 0
+  beef: 0
+  banana: 0
+  blueberry: 0
+  bread: 0
+  carrot: 0
+  cheese: 0
+  cherry: 0
+  rice: 0
+  watermelon: 0
   coin: 0
   battery: 0
   chess: 0

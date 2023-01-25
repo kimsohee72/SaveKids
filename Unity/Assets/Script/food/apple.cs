@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class apple_q : MonoBehaviour
+public class apple : MonoBehaviour
 {
     public GameManager gameManager;
     Rigidbody rigid;
@@ -42,7 +42,7 @@ public class apple_q : MonoBehaviour
             info.text = "사과 조각은 멀리 두어야 합니다!";
             info.color = new Color(0, 0, 1, 1);
 
-            gameManager.point += 1;
+            gameManager.apple = true;
         }
     }
 }
