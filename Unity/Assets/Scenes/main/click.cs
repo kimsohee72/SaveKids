@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class click : MonoBehaviour
 {
-    public void SceneChange()
+    public void Scene()
     {
         SceneManager.LoadScene("main");
+    }
+    public void SceneChange()
+    {
+        SceneManager.LoadScene("main1");
     }
     public void SceneChange1()
     {
