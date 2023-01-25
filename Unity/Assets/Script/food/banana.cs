@@ -5,6 +5,7 @@ using TMPro;
 
 public class banana : MonoBehaviour
 {
+    public GameManager gameManager;
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
@@ -34,6 +35,7 @@ public class banana : MonoBehaviour
             Debug.Log("near");
             info.text = "바나나는 가까이 두어도 괜찮아요!";
             info.color = new Color(0, 0, 1, 1);
+            gameManager.banana = true;
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {
