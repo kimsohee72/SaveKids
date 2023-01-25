@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &60805451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798366555410065, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &124946198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5334515990885954633, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &142207673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4520704488884469834, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &147951615
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &177717741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &272218287 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3562881471431523036, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &322704513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798367058201239, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &353755390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798366189761479, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &358717663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798366875181295, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &408734587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &432418253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,7 +1509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &510706683 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4520704488990214876, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -1527,7 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &532279994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,7 +1701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &592803962 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798367013504651, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -1719,7 +1719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &602335489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4520704488303507158, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -1737,7 +1737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &609145515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &615558826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798366473417103, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -1811,7 +1811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1001 &634034922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2217,7 +2217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,7 +2467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &741886542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798367196599877, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -2485,7 +2485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &759390407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,7 +3185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &807695059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4520704487457247526, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -3203,7 +3203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &809467976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,7 +3610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &811806133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798365445891444, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -3628,7 +3628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &837873809 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798365730951896, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -3646,7 +3646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &845330688
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,7 +4147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &876629807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,7 +4839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1128152136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798365790856743, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -4857,7 +4857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1217227907 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798366468963057, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -4875,7 +4875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1271997414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798365686314323, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -4893,7 +4893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1333714175
 GameObject:
   m_ObjectHideFlags: 0
@@ -5594,7 +5594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1724158874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4520704487338601202, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -5612,7 +5612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1771916534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4520704487940326280, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -5630,7 +5630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1776901830 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798365522803537, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -5648,7 +5648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1782097412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4226798367458023827, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -5666,7 +5666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1863181841 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4520704487662987619, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -5684,7 +5684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1874246690 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4520704488221136690, guid: c2712a3ee6228be42b2933c2f6cbeacd, type: 3}
@@ -5702,7 +5702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1001 &1883075969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5794,7 +5794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1945110638
 GameObject:
   m_ObjectHideFlags: 0
@@ -5947,7 +5947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &1986397461
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,7 +6585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1 &2072584847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4900152932567852865, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
@@ -6613,7 +6613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Slicegame_Knife: {fileID: 20939010}
+  Slicegame_grab: {fileID: 0}
 --- !u!1001 &791385923792267444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6637,6 +6637,138 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1356451939}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnActivated
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnDeactivated
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHoverExited
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_LastHoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHoverEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_LastSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSelectExited
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSelectEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 791385923792267446}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_LastHoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLastHoverExited
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_LastSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLastSelectExited
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFirstHoverEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFirstSelectEntered
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_LastHoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_LastSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 20939010}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Slicegame_respawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1999104155, guid: 45beec86c061b85488d426c5e0575707, type: 3}
       propertyPath: m_UseGravity
       value: 1
@@ -6740,24 +6872,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 791385925470109263, guid: 45beec86c061b85488d426c5e0575707, type: 3}
   m_PrefabInstance: {fileID: 791385923792267444}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &791385923792267446 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6935817681232748812, guid: 45beec86c061b85488d426c5e0575707, type: 3}
-  m_PrefabInstance: {fileID: 791385923792267444}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &791385923792267452
+--- !u!114 &791385923792267446 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4893872207650806184, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+  m_PrefabInstance: {fileID: 791385923792267444}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20939010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af932582fbbf339458b818f2eefe9c63, type: 3}
+  m_Script: {fileID: 11500000, guid: b1ebcb0daeeaf224abf0f428045c8983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Grab_image: {fileID: 791385923792267446}
 --- !u!1001 &2748794323022116701
 PrefabInstance:
   m_ObjectHideFlags: 0
