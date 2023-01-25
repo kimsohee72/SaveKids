@@ -32,6 +32,9 @@ public class Slicegame_text : MonoBehaviour
 	public GameObject middle_text_banana;
 	public GameObject last_text;
 
+	public GameObject Slicegame_GamePart;
+	public GameObject Slicegame_FinalPart;
+
 	public GameObject btn;
 	public GameObject bowl_in_carrot;
 
@@ -49,6 +52,12 @@ public class Slicegame_text : MonoBehaviour
 		Carrot.SetActive(true);
 		Banana.SetActive(false);
 		btn.SetActive(false);
+	}
+
+	void gotoFinal()
+	{
+		Slicegame_GamePart.SetActive(false);
+		Slicegame_FinalPart.SetActive(true);
 	}
 
 	// Update is called once per frame
@@ -155,6 +164,7 @@ public class Slicegame_text : MonoBehaviour
 					first_text_banana.SetActive(false);
 					middle_text_banana.SetActive(false);
 					last_text.SetActive(true);
+					Invoke("gotoFinal", 2);
 				}
 				// ¾ÆÁ÷ ´ú Àß¶ú´Ù¸é(if not all cut)
 				else
@@ -165,6 +175,5 @@ public class Slicegame_text : MonoBehaviour
 				}
 			}
 		}
-
 	}
 }
