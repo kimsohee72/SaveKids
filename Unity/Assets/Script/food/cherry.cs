@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class cherry : MonoBehaviour
 {
@@ -12,11 +13,12 @@ public class cherry : MonoBehaviour
     int near_num;
     int far_num;
     TMP_Text info;
+    public GameObject Cherry;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("info").GetComponent<TextMeshPro>();
+        info = GameObject.Find("list_cherry").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -32,17 +34,17 @@ public class cherry : MonoBehaviour
 
         if (Physics.Raycast(ray, 0.001f, 1 << near_num))
         {
-            Debug.Log("near");
-            info.text = "체리는 멀리 두어야 합니다!";
+            //Debug.Log("near");
+            info.text = "체리";
             info.color = new Color(1, 0, 0, 1);
         }
-        else if (Physics.Raycast(ray, 0.0001f, 1 << far_num))
+        else if (Physics.Raycast(ray, 0.001f, 1 << far_num))
         {
-            Debug.Log("far");
-            info.text = "체리는 멀리 두어야 합니다!";
+            //Debug.Log("far");
+            info.text = "체리";
             info.color = new Color(0, 0, 1, 1);
-
             gameManager.cherry = true;
+            Cherry.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

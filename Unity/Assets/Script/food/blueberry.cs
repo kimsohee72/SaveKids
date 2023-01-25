@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class blueberry : MonoBehaviour
 {
@@ -12,11 +13,12 @@ public class blueberry : MonoBehaviour
     int near_num;
     int far_num;
     TMP_Text info;
+    public GameObject Blueberry;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("info").GetComponent<TextMeshPro>();
+        info = GameObject.Find("list_blueberry").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -30,19 +32,19 @@ public class blueberry : MonoBehaviour
     {
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
 
-        if (Physics.Raycast(ray, 0.0001f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.01f, 1 << near_num))
         {
-            Debug.Log("near");
-            info.text = "블루베리는 멀리 두어야 합니다!";
+            //Debug.Log("near");
+            info.text = "블루베리";
             info.color = new Color(1, 0, 0, 1);
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {
-            Debug.Log("far");
-            info.text = "블루베리는 멀리 두어야 합니다!";
+            //Debug.Log("far");
+            info.text = "블루베리";
             info.color = new Color(0, 0, 1, 1);
-
             gameManager.blueberry = true;
+            Blueberry.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

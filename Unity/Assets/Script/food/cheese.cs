@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class cheese : MonoBehaviour
 {
@@ -12,11 +13,12 @@ public class cheese : MonoBehaviour
     int near_num;
     int far_num;
     TMP_Text info;
+    public GameObject Cheese;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("info").GetComponent<TextMeshPro>();
+        info = GameObject.Find("list_cheese").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -32,16 +34,17 @@ public class cheese : MonoBehaviour
 
         if (Physics.Raycast(ray, 0.01f, 1 << near_num))
         {
-            Debug.Log("near");
-            info.text = "치즈는 가까이 두어도 괜찮아요!";
+            //Debug.Log("near");
+            info.text = "치즈";
             info.color = new Color(0, 0, 1, 1);
             gameManager.cheese = true;
+            Cheese.GetComponent<XRGrabInteractable>().enabled = false;
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {
-            Debug.Log("far");
-            info.text = "치즈는 가까이 두어도 괜찮아요!";
-            info.color = new Color(0, 0, 1, 1);
+            //Debug.Log("far");
+            info.text = "치즈";
+            info.color = new Color(1, 0, 0, 1);
         }
     }
 }
