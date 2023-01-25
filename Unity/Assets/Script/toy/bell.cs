@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class bell : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class bell : MonoBehaviour
     public LayerMask worldLayer;
     Ray ray;
     int near_num;
+    TMP_Text list;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
+        list = GameObject.Find("list_bell").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -25,11 +28,12 @@ public class bell : MonoBehaviour
     {
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
 
-        if (Physics.Raycast(ray, 0.0975f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.2f, 1 << near_num))
         {
             Debug.Log("good");
-
-            gameManager.point += 1;
+            gameManager.bell = true;
+            list.text = "- มพ";
+            list.color = new Color(1, 0, 0, 1);
         }
     }
 }

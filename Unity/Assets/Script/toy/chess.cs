@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ring : MonoBehaviour
+public class chess : MonoBehaviour
 {
     public GameManager gameManager;
     Rigidbody rigid;
@@ -15,7 +15,7 @@ public class ring : MonoBehaviour
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
-        list = GameObject.Find("list_ring").GetComponent<TextMeshPro>();
+        list = GameObject.Find("list_chess").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -31,8 +31,8 @@ public class ring : MonoBehaviour
         if (Physics.Raycast(ray, 0.01f, 1 << near_num))
         {
             Debug.Log("good");
-            gameManager.ring = true;
-            list.text = "- 반지";
+            gameManager.chess = true;
+            list.text = "- 체스말";
             list.color = new Color(1, 0, 0, 1);
         }
     }
