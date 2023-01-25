@@ -6394,9 +6394,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5417135233823811554, guid: 3bb4196eb3484a24ea6a718ebb2f4bc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
+    - target: {fileID: 5417135233823811554, guid: 3bb4196eb3484a24ea6a718ebb2f4bc6, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
+    - target: {fileID: 5417135233823820108, guid: 3bb4196eb3484a24ea6a718ebb2f4bc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
     - target: {fileID: 5417135233826894440, guid: 3bb4196eb3484a24ea6a718ebb2f4bc6, type: 3}
       propertyPath: m_Name
       value: minigame7_baby
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417135233826997730, guid: 3bb4196eb3484a24ea6a718ebb2f4bc6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5417135233827164368, guid: 3bb4196eb3484a24ea6a718ebb2f4bc6, type: 3}
       propertyPath: m_RootOrder
@@ -6442,5 +6458,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5417135233828953718, guid: 3bb4196eb3484a24ea6a718ebb2f4bc6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8f6c87c1304fde94ca666ef81478b078, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bb4196eb3484a24ea6a718ebb2f4bc6, type: 3}
