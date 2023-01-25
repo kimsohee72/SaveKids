@@ -15,7 +15,7 @@ public class click : MonoBehaviour
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Slice_game");
+        SceneManager.LoadScene("Slice_game_mini2");
     }
     public void SceneChange3()
     {
