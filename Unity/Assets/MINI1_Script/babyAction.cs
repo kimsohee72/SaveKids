@@ -78,14 +78,15 @@ public class babyAction : MonoBehaviour
             animator.SetBool("isCrying", isCrying);
         }
 
-        if (isEating == true)
+        if (isEating == true)//&& iscrying true
         {
             notCryingStartTimer = false;
             Debug.Log("bquit");
 
-            animator.SetBool("isEating", true);
+            isCrying = false;
+            animator.SetBool("isEating", isEating);
 
-            animator.SetBool("isCrying", true);
+            animator.SetBool("isCrying", isCrying);
         }
 
         /*
@@ -105,11 +106,17 @@ public class babyAction : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("OnTriggerEnter : " + other.name);
-        if(other.name == "Spoon_01" && isEating == false && isCrying == false)
+        if(other.name == "Spoon" && isEating == false && isCrying == false)
         {
             Debug.Log("here~~~");
             isCrying = false;
             isEating = true;
+
+            GameObject.Find("gameEndPanel").GetComponent<checkSceneCorrect>().countEat++;
+        }
+        else if(other.name == "Spoon" && isCrying == true)
+        {
+            Debug.Log("baby crying - focus on");
         }
     }
 }
