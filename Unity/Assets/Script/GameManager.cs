@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int point;
+    public bool coin, battery, chess, bell, ring, block;
     GameObject Finish;
 
     void FixedUpdate()
@@ -14,6 +15,11 @@ public class GameManager : MonoBehaviour
         {
             //Finish.SetActive(true);
             Debug.Log("³¡");
+        }
+
+        if(coin == true && battery == true && chess == true && bell == true && ring == true && block == true)
+        {
+            Debug.Log("6¹ø ³¡");
         }
     }
 }

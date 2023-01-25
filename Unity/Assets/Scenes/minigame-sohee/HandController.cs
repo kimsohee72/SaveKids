@@ -9,6 +9,7 @@ public class HandController : MonoBehaviour
     public Animator anim;
     public GameObject baby;
     public GameObject Run;
+    public GameObject Canvas;
     public GameObject button;
 
     public void buttonPush()
@@ -19,10 +20,12 @@ public class HandController : MonoBehaviour
     {
         anim.SetBool("return", false);
         button.gameObject.SetActive(false);
+        Canvas.SetActive(false);
     }
     public void OnFirstHoverEntered()
     {
         Debug.Log($"{gameObject.name} - OnFirstHoverEntered");
+        Canvas.SetActive(true);
 
     }
 
@@ -34,17 +37,21 @@ public class HandController : MonoBehaviour
     public void OnHoverEntered()
     {
         Debug.Log($"{gameObject.name} - OnHoverEntered");
+       
     }
 
     public void OnHoverExited()
     {
         Debug.Log($"{gameObject.name} - OnHoverExited");
+        Canvas.SetActive(false);
+
     }
 
     public void OnFirstSelectEntered()
     {
         Debug.Log($"{gameObject.name} - OnFirstSelectEntered");
         baby.GetComponent<AudioSource>().enabled = false;
+        Canvas.SetActive(false);
     }
 
     public void OnLastSelectExited()
@@ -56,6 +63,7 @@ public class HandController : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} - OnSelectEntered");
         anim.SetBool("getit", true);
+        Canvas.SetActive(false);
         Run.GetComponent<Rotate>().enabled = false;
         baby.GetComponent<AudioSource>().enabled = false;
     }

@@ -188,6 +188,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3427186344303788715, guid: 304928a002c559d41b7f5cd6bbaae32f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
+    - target: {fileID: 3427186344303788715, guid: 304928a002c559d41b7f5cd6bbaae32f, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
+    - target: {fileID: 3427186344303815685, guid: 304928a002c559d41b7f5cd6bbaae32f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1075debf4ea79646b09f493ee6f3fa1, type: 2}
     - target: {fileID: 3427186344303847611, guid: 304928a002c559d41b7f5cd6bbaae32f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -236,10 +248,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3427186344309088427, guid: 304928a002c559d41b7f5cd6bbaae32f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3427186344309233441, guid: 304928a002c559d41b7f5cd6bbaae32f, type: 3}
       propertyPath: m_Name
       value: minigame5_baby
       objectReference: {fileID: 0}
+    - target: {fileID: 3427186344311307071, guid: 304928a002c559d41b7f5cd6bbaae32f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8f6c87c1304fde94ca666ef81478b078, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 304928a002c559d41b7f5cd6bbaae32f, type: 3}
 --- !u!1 &77462812
@@ -803,7 +823,6 @@ Transform:
   m_Father: {fileID: 22423425}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-
 --- !u!1001 &292661517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1044,7 +1063,6 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &432418253
-
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
