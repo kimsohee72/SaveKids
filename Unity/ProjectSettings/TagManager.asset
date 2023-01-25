@@ -5,11 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Button
+  - Toy
+  - safe
+  - danger
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - player
   - Water
   - UI
   - Food
@@ -17,9 +20,9 @@ TagManager:
   - Furniture
   - near
   - far
-  - 
-  - 
-  - 
+  - safe
+  - danger
+  - toy
   - 
   - 
   - 

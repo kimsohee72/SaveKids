@@ -14,10 +14,4 @@ public class Slicegame_Start : MonoBehaviour
         Game_part.SetActive(false);
         Finish_part.SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
