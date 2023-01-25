@@ -14,7 +14,10 @@ public class istriggered_carrot1 : MonoBehaviour
     {
         ThisCarrot1.tag = "Slice";
         nextCarrot1.tag = "NotSlice";
+        ThisCarrot1.layer = 6;
+        nextCarrot1.layer = 5;
         guideline1.SetActive(false);
+        carrot1 = false;
     }
 
     // Update is called once per frame

@@ -14,6 +14,8 @@ public class istriggered_carrot3: MonoBehaviour
     {
         ThisCarrot3.tag = "NotSlice";
         nextCarrot3.tag = "NotSlice";
+        ThisCarrot3.layer = 5;
+        nextCarrot3.layer = 5;
         guideline3.SetActive(false);
     }
 
