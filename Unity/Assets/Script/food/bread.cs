@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class bread : MonoBehaviour
 {
@@ -11,13 +12,14 @@ public class bread : MonoBehaviour
     Ray ray;
     int near_num;
     int far_num;
-    TMP_Text info;
+    TMP_Text info; 
+    public GameObject Bread;
 
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
         //ray = new Ray(rigid.position, Vector3.down);
-        info = GameObject.Find("info").GetComponent<TextMeshPro>();
+        info = GameObject.Find("list_bread").GetComponent<TextMeshPro>();
     }
 
 /*
@@ -43,7 +45,6 @@ public class bread : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
-        //Debug.Log(layerNum);
     }
 
     void FixedUpdate()
@@ -53,24 +54,25 @@ public class bread : MonoBehaviour
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
 
         //if (Physics.Raycast(ray, 0.01f, worldLayer))
-        if (Physics.Raycast(ray, 0.01f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.05f, 1 << near_num))
         {
-            Debug.Log("near");
+            //Debug.Log("near");
             //correct_near.SetActive(true);
             //wrong_near.SetActive(false);
             //near_clicked();
-            info.text = "½Ä»§Àº °¡±îÀÌ µÎ¾îµµ ±¦Âú¾Æ¿ä!";
+            info.text = "»§";
             info.color = new Color(0, 0, 1, 1);
             gameManager.bread = true;
+            Bread.GetComponent<XRGrabInteractable>().enabled = false;
         }
-        else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
+        else if (Physics.Raycast(ray, 0.05f, 1 << far_num))
         {
-            Debug.Log("far");
+            //Debug.Log("far");
             //correct_near.SetActive(false);
             //wrong_near.SetActive(true);
             //far_clicked();
-            info.text = "½Ä»§Àº °¡±îÀÌ µÎ¾îµµ ±¦Âú¾Æ¿ä!";
-            info.color = new Color(0, 0, 1, 1);
+            info.text = "»§";
+            info.color = new Color(1, 0, 0, 1);
         }
 
         //Debug.Log(info.color);
