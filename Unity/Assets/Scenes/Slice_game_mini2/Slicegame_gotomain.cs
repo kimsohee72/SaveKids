@@ -7,6 +7,6 @@ public class Slicegame_gotomain : MonoBehaviour
 {
     public void Slicegame_main()
     {
-        SceneManager.LoadScene("main");
+        SceneManager.LoadScene("main1");
     }
 }
