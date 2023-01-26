@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Slicegame_gotomain : MonoBehaviour
 {
+    public GameObject Kniknife;
+    void Start()
+    {
+        Kniknife.SetActive(false);
+    }
+
     public void Slicegame_main()
     {
         SceneManager.LoadScene("main1");

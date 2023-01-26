@@ -5,7 +5,10 @@ using UnityEngine;
 public class baby_animator : MonoBehaviour
 {
   Animator animator; 
-
+  public GameObject 접시;
+  public GameObject 인형;
+  public GameObject 인형클릭;
+  public GameObject 접시클릭;
     void Start(){
         this.animator = GetComponent<Animator>();
     }
@@ -26,7 +29,12 @@ public class baby_animator : MonoBehaviour
     void OnTriggerEnter(Collider other){ // select 됐을 때
         
         if(other.tag == "Toy"){
-            animator.SetBool("Looking", true);}
+            animator.SetBool("Looking", true);
+            접시.SetActive(true);
+            인형.SetActive(false);
+            접시클릭.SetActive(true);
+            인형클릭.SetActive(false);
+            }
 
        /*if(animator.GetBool("Looking") == true){
             if(other.tag == "Player"){
