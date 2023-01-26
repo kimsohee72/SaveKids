@@ -11,11 +11,13 @@ public class chess : MonoBehaviour
     Ray ray;
     int near_num;
     TMP_Text list;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        list = GameObject.Find("list_chess").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            list = GameObject.Find("list_chess").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -30,7 +32,7 @@ public class chess : MonoBehaviour
 
         if (Physics.Raycast(ray, 0.05f, 1 << near_num))
         {
-            Debug.Log("good");
+            //Debug.Log("good");
             gameManager.chess = true;
             list.text = "- Ã¼½º¸»";
             list.color = new Color(0, 0, 1, 1);

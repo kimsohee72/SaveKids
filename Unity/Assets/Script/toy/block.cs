@@ -11,11 +11,13 @@ public class block : MonoBehaviour
     Ray ray;
     int near_num;
     TMP_Text list;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        list = GameObject.Find("list_block").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            list = GameObject.Find("list_block").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -30,7 +32,7 @@ public class block : MonoBehaviour
 
         if (Physics.Raycast(ray, 0.1f, 1 << near_num))
         {
-            Debug.Log("good");
+            //Debug.Log("good");
             gameManager.block = true;
             list.text = "- ºí·Ï";
             list.color = new Color(0, 0, 1, 1);
