@@ -25,7 +25,7 @@ public class setting : MonoBehaviour
         hint.SetActive(false);
         Vector3 speed = Vector3.zero;
         //baby1.GetComponent<XRGrabInteractable>().enabled = true;
-        baby2.GetComponent<XRGrabInteractable>().enabled = true;
+        //baby2.GetComponent<XRGrabInteractable>().enabled = true;
         button.gameObject.SetActive(false);
         spoon.transform.position = Vector3.SmoothDamp(init, destination, ref speed, 0.1f);
         b.GetComponent<AudioSource>().enabled = false;

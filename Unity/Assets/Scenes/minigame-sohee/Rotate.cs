@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Rotate : MonoBehaviour
 {
@@ -26,16 +27,17 @@ public class Rotate : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("runA"))
         {
             hint.SetActive(true);
+            baby.GetComponent<XRGrabInteractable>().enabled = true;
 
         }
     }
-    
+
 
     void OrbitAround()
     {
-        
+
         transform.RotateAround(table.transform.position, Vector3.up, speed * Time.deltaTime);
-        
+
     }
 
     private void FixedUpdate()
