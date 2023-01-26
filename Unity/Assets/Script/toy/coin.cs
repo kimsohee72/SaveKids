@@ -11,11 +11,13 @@ public class coin : MonoBehaviour
     Ray ray;
     int near_num;
     TMP_Text list;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        list = GameObject.Find("list_coin").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            list = GameObject.Find("list_coin").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -30,7 +32,7 @@ public class coin : MonoBehaviour
 
         if (Physics.Raycast(ray, 0.1f, 1 << near_num))
         {
-            Debug.Log("good");
+            //Debug.Log("good");
             gameManager.coin = true;
             list.text = "- µ¿Àü";
             list.color = new Color(0, 0, 1, 1);

@@ -11,11 +11,13 @@ public class battery : MonoBehaviour
     Ray ray;
     int near_num;
     TMP_Text list;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        list = GameObject.Find("list_battery").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            list = GameObject.Find("list_battery").GetComponent<TextMeshPro>();
     }
     void Update()
     {
@@ -30,7 +32,7 @@ public class battery : MonoBehaviour
 
         if (Physics.Raycast(ray, 0.2f, 1 << near_num))
         {
-            Debug.Log("good");
+            //Debug.Log("good");
             gameManager.battery = true;
             list.text = "- ¹èÅÍ¸®";
             list.color = new Color(0, 0, 1, 1);
