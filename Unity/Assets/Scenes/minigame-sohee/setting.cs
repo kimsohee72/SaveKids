@@ -12,6 +12,7 @@ public class setting : MonoBehaviour
     public GameObject button;
     public GameObject b;
     public GameObject spoon;
+    public GameObject hint;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +22,9 @@ public class setting : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        hint.SetActive(false);
         Vector3 speed = Vector3.zero;
-        baby1.GetComponent<XRGrabInteractable>().enabled = true;
+        //baby1.GetComponent<XRGrabInteractable>().enabled = true;
         baby2.GetComponent<XRGrabInteractable>().enabled = true;
         button.gameObject.SetActive(false);
         spoon.transform.position = Vector3.SmoothDamp(init, destination, ref speed, 0.1f);
