@@ -10,6 +10,7 @@ public class change : MonoBehaviour
     public GameObject click;
     public GameObject hint;
     float y;
+    static int a=0;
     
     // Start is called before the first frame update
     void Start()
@@ -30,10 +31,10 @@ public class change : MonoBehaviour
             click.transform.rotation = Quaternion.Euler(0, 0, 0);
             click.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, y);
         }
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("lie_cry"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("lie_cry")&&a==0)
         {
             lie.GetComponent<AudioSource>().enabled = true;
-
+            a++;
         }
     }
 }

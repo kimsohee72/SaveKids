@@ -15,7 +15,7 @@ public class no5_END : MonoBehaviour
 
     void Update()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("end"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("박수"))
         {
             end_menu.SetActive(true);
         }
