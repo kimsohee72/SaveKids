@@ -14,11 +14,13 @@ public class blueberry : MonoBehaviour
     int far_num;
     TMP_Text info;
     public GameObject Blueberry;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("list_blueberry").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_blueberry").GetComponent<TextMeshPro>();
     }
     void Update()
     {

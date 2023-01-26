@@ -14,11 +14,13 @@ public class apple : MonoBehaviour
     int far_num;
     TMP_Text info;
     public GameObject Apple;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("list_apple").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_apple").GetComponent<TextMeshPro>();
     }
     void Update()
     {

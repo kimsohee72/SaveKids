@@ -14,11 +14,13 @@ public class banana : MonoBehaviour
     int far_num;
     TMP_Text info;
     public GameObject Banana;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("list_banana").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_banana").GetComponent<TextMeshPro>();
     }
     void Update()
     {

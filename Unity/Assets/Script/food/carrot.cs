@@ -14,11 +14,13 @@ public class carrot : MonoBehaviour
     int far_num;
     TMP_Text info;
     public GameObject Carrot;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("list_carrot").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_carrot").GetComponent<TextMeshPro>();
     }
     void Update()
     {
