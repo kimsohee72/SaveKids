@@ -10,7 +10,8 @@ public class startButtonClick : MonoBehaviour
     GameObject rattle;
     GameObject spoon;
     GameObject bowl;
-    GameObject panel;
+    GameObject panelStart;
+    GameObject panelEnd;
 
     // Start is called before the first frame update
     void Awake()
@@ -22,12 +23,15 @@ public class startButtonClick : MonoBehaviour
         rattle = GameObject.Find("BabyRattle_01");
         spoon = GameObject.Find("Spoon");
         bowl = GameObject.Find("Bowl_02");
-        panel = GameObject.Find("PanelStart");
+        panelStart = GameObject.Find("PanelStart");
+        panelEnd = GameObject.Find("PanelEnd");
 
         baby.SetActive(false);
         rattle.SetActive(false);
         spoon.SetActive(false);
         bowl.SetActive(false);
+        panelStart.SetActive(true);
+        panelEnd.SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,7 +48,7 @@ public class startButtonClick : MonoBehaviour
         rattle.SetActive(true);
         spoon.SetActive(true);
         bowl.SetActive(true);
-        panel.SetActive(false);
+        panelStart.SetActive(false);
 
     }
 }
