@@ -61,10 +61,11 @@ public class Slicegame_text : MonoBehaviour
 		Slicegame_FinalPart.SetActive(true);
 	}
 
-	void Oninvoke()
+/*	void Oninvoke()
 	{
-
-	}
+		Slice_KnifeKnife.SetActive(false);
+		Slice_KnifeKnife.SetActive(true);
+	}*/
 
 	// Update is called once per frame
 	void Update()
@@ -101,7 +102,6 @@ public class Slicegame_text : MonoBehaviour
                 // middle_text_carrot.SetActive(false);
                 // last_text.SetActive(true);
                 // btn.SetActive(true);
-                Invoke("Oninvoke", 2);
             }
 			// ¾ÆÁ÷ ´ú Àß¶ú´Ù¸é(if not all cut)
 			else
@@ -173,7 +173,7 @@ public class Slicegame_text : MonoBehaviour
 					first_text_banana.SetActive(false);
 					/*					middle_text_banana.SetActive(false);
 										last_text.SetActive(true);*/
-					Invoke("gotoFinal", 1);
+					Invoke("gotoFinal", 2);
 					//gotoFinal();
 				}
 				// ¾ÆÁ÷ ´ú Àß¶ú´Ù¸é(if not all cut)
