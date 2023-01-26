@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class babyAction : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class babyAction : MonoBehaviour
 
     public bool isCrying = true;
     public bool isEating = false;
+
+    public int checkEat = 0;
+
+    public GameObject panelEnd;
 
     // Start is called before the first frame update
     void Start()
@@ -89,6 +94,11 @@ public class babyAction : MonoBehaviour
             animator.SetBool("isCrying", isCrying);
         }
 
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("End"))
+        {
+            Debug.Log("adsf");
+            panelEnd.SetActive(true);
+        }
         /*
         if(Input.GetKeyDown(KeyCode.B) && notCryingStartTimer == true)
         {
@@ -108,11 +118,12 @@ public class babyAction : MonoBehaviour
         Debug.Log("OnTriggerEnter : " + other.name);
         if(other.name == "Spoon" && isEating == false && isCrying == false)
         {
-            Debug.Log("here~~~");
+            Debug.Log(checkEat);
             isCrying = false;
             isEating = true;
-
-            GameObject.Find("gameEndPanel").GetComponent<checkSceneCorrect>().countEat++;
+            checkEat++;
+            animator.SetInteger("countEat", checkEat);
+            Debug.Log(checkEat);
         }
         else if(other.name == "Spoon" && isCrying == true)
         {
