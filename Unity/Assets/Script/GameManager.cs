@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public bool coin, battery, chess, bell, ring, block;
     GameObject Finish;
     public GameObject food, table, chair, spoon, plate, bib, check, info, list, ending;
+    public GameObject toy, info_6, list_6, box, ending_6;
 
     void FixedUpdate()
     {
@@ -31,6 +32,11 @@ public class GameManager : MonoBehaviour
         if (coin == true && battery == true && chess == true && bell == true && ring == true && block == true)
         {
             Debug.Log("6¹ø ³¡");
+            toy.SetActive(false);
+            info_6.SetActive(false);
+            list_6.SetActive(false);
+            box.SetActive(false);
+            ending_6.SetActive(true);
         }
     }
 }

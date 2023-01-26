@@ -13,7 +13,7 @@ public class SelectObject_1 : MonoBehaviour
     {   
        
         object_name = GameObject.Find("text_1").GetComponent<TextMeshPro>();
-        
+        object_name.transform.rotation = Quaternion.Euler(0, 0, 0);
         object_name.text = $"{gameObject.name}";
         
     }
