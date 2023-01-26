@@ -14,11 +14,13 @@ public class rice : MonoBehaviour
     int far_num;
     TMP_Text info;
     public GameObject Rice;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("list_rice").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_rice").GetComponent<TextMeshPro>();
     }
     void Update()
     {

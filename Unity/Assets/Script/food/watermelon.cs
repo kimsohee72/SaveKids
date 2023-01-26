@@ -14,11 +14,13 @@ public class watermelon : MonoBehaviour
     int far_num;
     TMP_Text info;
     public GameObject Watermelon;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("list_watermelon").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_watermelon").GetComponent<TextMeshPro>();
     }
     void Update()
     {

@@ -14,12 +14,14 @@ public class bread : MonoBehaviour
     int far_num;
     TMP_Text info; 
     public GameObject Bread;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
         //ray = new Ray(rigid.position, Vector3.down);
-        info = GameObject.Find("list_bread").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_bread").GetComponent<TextMeshPro>();
     }
 
 /*
