@@ -13,6 +13,7 @@ public class setting : MonoBehaviour
     public GameObject b;
     public GameObject spoon;
     public GameObject hint;
+    public GameObject eat;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +31,6 @@ public class setting : MonoBehaviour
         spoon.transform.position = Vector3.SmoothDamp(init, destination, ref speed, 0.1f);
         b.GetComponent<AudioSource>().enabled = false;
         spoon.GetComponent<spoonmove>().enabled = false;
+        eat.GetComponent<AudioSource>().enabled = false;
     }
 }
