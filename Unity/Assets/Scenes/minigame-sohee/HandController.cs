@@ -58,6 +58,7 @@ public class HandController : MonoBehaviour
     public void OnLastSelectExited()
     {
         Debug.Log($"{gameObject.name} - OnLastSelectExited");
+        Canvas.SetActive(false);
     }
 
     public void OnSelectEntered()
@@ -80,6 +81,7 @@ public class HandController : MonoBehaviour
         baby.GetComponent<AudioSource>().enabled = false;
         baby.GetComponent<XRGrabInteractable>().enabled = false;
         hint.SetActive(false);
+        Canvas.SetActive(false);
 
     }
 
