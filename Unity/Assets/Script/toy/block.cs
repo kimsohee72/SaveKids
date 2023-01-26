@@ -33,7 +33,7 @@ public class block : MonoBehaviour
             Debug.Log("good");
             gameManager.block = true;
             list.text = "- ºí·Ï";
-            list.color = new Color(1, 0, 0, 1);
+            list.color = new Color(0, 0, 1, 1);
         }
     }
 }
