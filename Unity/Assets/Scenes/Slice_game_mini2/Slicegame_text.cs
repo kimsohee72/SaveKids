@@ -82,10 +82,10 @@ public class Slicegame_text : MonoBehaviour
 		banana2 = Banana2.GetComponent<istriggered_banana3>().banana3;
 		banana3 = Banana3.GetComponent<istriggered_banana5>().banana5;
 		banana4 = Banana4.GetComponent<istriggered_banana8>().banana8;
-/*		banana5 = Banana5.GetComponent<istriggered_banana5>().banana5;
-		banana6 = Banana6.GetComponent<istriggered_banana6>().banana6;
-		banana7 = Banana7.GetComponent<istriggered_banana7>().banana7;
-		banana8 = Banana8.GetComponent<istriggered_banana8>().banana8;*/
+		/*		banana5 = Banana5.GetComponent<istriggered_banana5>().banana5;
+				banana6 = Banana6.GetComponent<istriggered_banana6>().banana6;
+				banana7 = Banana7.GetComponent<istriggered_banana7>().banana7;
+				banana8 = Banana8.GetComponent<istriggered_banana8>().banana8;*/
 
 		// 당근 자르기
 		if (carrot1 == true || carrot2 == true || carrot3 == true || carrot4 == true ||
@@ -98,7 +98,7 @@ public class Slicegame_text : MonoBehaviour
 				first_text_carrot.SetActive(false);
 				Carrot.SetActive(false);
 				bowl_in_carrot.SetActive(true);
-                //middle_text_carrot.SetActive(false);
+                // middle_text_carrot.SetActive(false);
                 // last_text.SetActive(true);
                 // btn.SetActive(true);
                 Invoke("Oninvoke", 2);
