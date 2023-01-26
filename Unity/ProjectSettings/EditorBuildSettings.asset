@@ -5,42 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/main/main.unity
     guid: c1cb2fa069208fc47afad5f0aaf5612e
   - enabled: 1
     path: Assets/Scenes/main/main1.unity
     guid: 609ec3a63328a294fba69476a57b620b
-  - enabled: 1
-    path: Assets/Scenes/EK/Mini1.unity
-    guid: e9d83cb2f286dfd448b1a5fe266c6325
   - enabled: 1
     path: Assets/minigame_eunhyang/minigame_eunhyang5.unity
     guid: df8ed5861a223134fa5c4ccebd6315ac
