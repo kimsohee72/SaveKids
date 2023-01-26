@@ -14,11 +14,13 @@ public class cheese : MonoBehaviour
     int far_num;
     TMP_Text info;
     public GameObject Cheese;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("list_cheese").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_cheese").GetComponent<TextMeshPro>();
     }
     void Update()
     {

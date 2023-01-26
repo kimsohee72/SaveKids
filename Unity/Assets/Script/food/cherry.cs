@@ -14,11 +14,13 @@ public class cherry : MonoBehaviour
     int far_num;
     TMP_Text info;
     public GameObject Cherry;
+    public GameObject text;
 
-    void Awake()
+    void Start()
     {
         rigid = GetComponent<Rigidbody>();
-        info = GameObject.Find("list_cherry").GetComponent<TextMeshPro>();
+        if (text.activeSelf == true)
+            info = GameObject.Find("list_cherry").GetComponent<TextMeshPro>();
     }
     void Update()
     {
