@@ -33,7 +33,7 @@ public class coin : MonoBehaviour
             Debug.Log("good");
             gameManager.coin = true;
             list.text = "- µ¿Àü";
-            list.color = new Color(1, 0, 0, 1);
+            list.color = new Color(0, 0, 1, 1);
         }
     }
 }
