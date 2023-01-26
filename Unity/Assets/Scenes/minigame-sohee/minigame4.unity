@@ -6632,7 +6632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1537909133}
   baby: {fileID: 1537909130}
-  Run: {fileID: 0}
+  Run: {fileID: 266061755}
   Canvas: {fileID: 1496103737}
   button: {fileID: 1462554967}
   hint: {fileID: 127056190}
