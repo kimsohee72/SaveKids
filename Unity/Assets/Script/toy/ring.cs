@@ -33,7 +33,7 @@ public class ring : MonoBehaviour
             Debug.Log("good");
             gameManager.ring = true;
             list.text = "- ¹ÝÁö";
-            list.color = new Color(1, 0, 0, 1);
+            list.color = new Color(0, 0, 1, 1);
         }
     }
 }

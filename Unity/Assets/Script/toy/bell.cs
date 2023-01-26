@@ -33,7 +33,7 @@ public class bell : MonoBehaviour
             Debug.Log("good");
             gameManager.bell = true;
             list.text = "- มพ";
-            list.color = new Color(1, 0, 0, 1);
+            list.color = new Color(0, 0, 1, 1);
         }
     }
 }
