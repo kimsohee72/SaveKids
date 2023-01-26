@@ -5,9 +5,16 @@ using UnityEngine;
 public class baby_animator2 : MonoBehaviour
 {
   Animator animator; 
+  public GameObject 접시안내;
+  public GameObject 접시클릭;
+ public  AudioSource audioSource;
+
 
     void Start(){
         this.animator = GetComponent<Animator>();
+        audioSource.GetComponent<AudioSource>();
+        audioSource.playOnAwake=false;
+        audioSource.loop = false;
     }
 
     // Update is called once per frame
@@ -31,6 +38,11 @@ public class baby_animator2 : MonoBehaviour
        if(animator.GetBool("Looking") == true){
             if(other.tag == "Player"){
             animator.SetBool("Disgorge", true);
+            //audioSource.playOnAwake=true;
+            audioSource.Play();
+            접시안내.SetActive(false);
+            접시클릭.SetActive(false);
+
             }
         }
         
