@@ -77,6 +77,7 @@ public class HandController : MonoBehaviour
         baby.transform.position = new Vector3(-3, 0, 10);
         baby.transform.rotation = Quaternion.Euler(0, 180, 0);
         button.gameObject.SetActive(true);
+        baby.GetComponent<AudioSource>().enabled = false;
         baby.GetComponent<XRGrabInteractable>().enabled = false;
         hint.SetActive(false);
 

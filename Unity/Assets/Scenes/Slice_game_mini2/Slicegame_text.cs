@@ -28,14 +28,14 @@ public class Slicegame_text : MonoBehaviour
 
 	public GameObject first_text_carrot;
 	public GameObject first_text_banana;
-	public GameObject middle_text_carrot;
-	public GameObject middle_text_banana;
-	public GameObject last_text;
+/*	public GameObject middle_text_carrot;
+	public GameObject middle_text_banana;*/
+	// public GameObject last_text;
 
 	public GameObject Slicegame_GamePart;
 	public GameObject Slicegame_FinalPart;
 
-	public GameObject btn;
+	// public GameObject btn;
 	public GameObject bowl_in_carrot;
 
 	bool carrot1, carrot2, carrot3, carrot4, carrot5, carrot6, carrot7, carrot8;
@@ -46,18 +46,24 @@ public class Slicegame_text : MonoBehaviour
 	void Start()
 	{
 		first_text_carrot.SetActive(true);
-		middle_text_carrot.SetActive(false);
-		middle_text_banana.SetActive(false);
-		last_text.SetActive(false);
+		first_text_banana.SetActive(false);
+/*		middle_text_carrot.SetActive(false);
+		middle_text_banana.SetActive(false);*/
+		//last_text.SetActive(false);
 		Carrot.SetActive(true);
 		Banana.SetActive(false);
-		btn.SetActive(false);
+		// btn.SetActive(false);
 	}
 
 	void gotoFinal()
 	{
 		Slicegame_GamePart.SetActive(false);
 		Slicegame_FinalPart.SetActive(true);
+	}
+
+	void Oninvoke()
+	{
+
 	}
 
 	// Update is called once per frame
@@ -90,27 +96,30 @@ public class Slicegame_text : MonoBehaviour
 			   carrot5 == true && carrot6 == true && carrot7 == true)
 			{
 				first_text_carrot.SetActive(false);
-				middle_text_carrot.SetActive(false);
-				last_text.SetActive(true);
-				btn.SetActive(true);
-			}
+				Carrot.SetActive(false);
+				bowl_in_carrot.SetActive(true);
+                //middle_text_carrot.SetActive(false);
+                // last_text.SetActive(true);
+                // btn.SetActive(true);
+                Invoke("Oninvoke", 2);
+            }
 			// ¾ÆÁ÷ ´ú Àß¶ú´Ù¸é(if not all cut)
 			else
 			{
-				first_text_carrot.SetActive(false);
-				middle_text_carrot.SetActive(true);
-				last_text.SetActive(false);
-				btn.SetActive(false);
+				first_text_carrot.SetActive(true);
+				//middle_text_carrot.SetActive(true);
+				// last_text.SetActive(false);
+				// btn.SetActive(false);
 			}
 		}
 
 		// ¹Ù³ª³ª ÀÚ¸£±â
 		if (bowl_in_carrot.activeSelf == true)
 		{
-			last_text.SetActive(false);
+			// last_text.SetActive(false);
 			first_text_banana.SetActive(true);
 
-			btn.SetActive(false);
+			// btn.SetActive(false);
 			Carrot.SetActive(false);
 			Banana.SetActive(true);
 
@@ -162,16 +171,17 @@ public class Slicegame_text : MonoBehaviour
 				if(banana4 == true && banana3 == true && banana2 == true)
 				{
 					first_text_banana.SetActive(false);
-					middle_text_banana.SetActive(false);
-					last_text.SetActive(true);
-					Invoke("gotoFinal", 2);
+					/*					middle_text_banana.SetActive(false);
+										last_text.SetActive(true);*/
+					Invoke("gotoFinal", 1);
+					//gotoFinal();
 				}
 				// ¾ÆÁ÷ ´ú Àß¶ú´Ù¸é(if not all cut)
 				else
 				{
-					first_text_banana.SetActive(false);
-					middle_text_banana.SetActive(true);
-					last_text.SetActive(false);
+					first_text_banana.SetActive(true);
+/*					middle_text_banana.SetActive(true);
+					last_text.SetActive(false);*/
 				}
 			}
 		}
