@@ -11,6 +11,7 @@ public class HandController : MonoBehaviour
     public GameObject Run;
     public GameObject Canvas;
     public GameObject button;
+    public GameObject hint;
 
     public void buttonPush()
     {
@@ -77,6 +78,7 @@ public class HandController : MonoBehaviour
         baby.transform.rotation = Quaternion.Euler(0, 180, 0);
         button.gameObject.SetActive(true);
         baby.GetComponent<XRGrabInteractable>().enabled = false;
+        hint.SetActive(false);
 
     }
 
