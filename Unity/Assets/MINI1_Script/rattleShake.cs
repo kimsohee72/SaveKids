@@ -14,8 +14,11 @@ public class rattleShake : MonoBehaviour
     Transform rattleTransform;
     Vector3 prevLocation = new Vector3(0, 0, 0);
     Vector3 nowLocation = new Vector3(0, 0, 0);
-    
-    
+
+    public GameObject panel1;
+    public GameObject panel2;
+    public GameObject panel3;
+
     public void Start()
     {
         interactor = GetComponent<XRGrabInteractable>();
@@ -73,6 +76,11 @@ public class rattleShake : MonoBehaviour
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().timeElapsed = 0;
             Debug.Log("grab");
         }
+        if (GameObject.Find("ToonBabyA").GetComponent<babyAction>().notCryingStartTimer == false) {
+            panel1.SetActive(false);
+            panel2.SetActive(true);
+            panel3.SetActive(false);
+        }
     }
     public void ungrab(BaseInteractionEventArgs arg)
     {
@@ -83,6 +91,13 @@ public class rattleShake : MonoBehaviour
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().startTimer = false;
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().timeElapsed = 0;
             Debug.Log("ungrab");
+        }
+
+        if (GameObject.Find("ToonBabyA").GetComponent<babyAction>().notCryingStartTimer == false)
+        {
+            panel1.SetActive(true);
+            panel2.SetActive(false);
+            panel3.SetActive(false);
         }
     }
 
