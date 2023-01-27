@@ -11,6 +11,7 @@ public class endButton : MonoBehaviour
     GameObject spoon;
     GameObject bowl;
     public GameObject panelEnd;
+    public GameObject panelGuide;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class endButton : MonoBehaviour
         rattle.SetActive(false);
         spoon.SetActive(false);
         bowl.SetActive(false);
+        panelGuide.SetActive(false);
     }
 
     void pressButton()

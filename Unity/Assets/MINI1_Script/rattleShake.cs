@@ -76,6 +76,7 @@ public class rattleShake : MonoBehaviour
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().timeElapsed = 0;
             Debug.Log("grab");
         }
+
         if (GameObject.Find("ToonBabyA").GetComponent<babyAction>().notCryingStartTimer == false) {
             panel1.SetActive(false);
             panel2.SetActive(true);
