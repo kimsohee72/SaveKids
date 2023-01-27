@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.60577905, g: 0.5495826, b: 0.6456542, a: 1}
+  m_IndirectSpecularColor: {r: 0.605517, g: 0.5493037, b: 0.64546186, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1718,7 +1718,7 @@ MonoBehaviour:
   baby: {fileID: 266061755}
   click: {fileID: 1259570835}
   hint: {fileID: 127056190}
-  Player: {fileID: 1725970207}
+  Player: {fileID: 2047951877}
   speed: 10
 --- !u!114 &266061764
 MonoBehaviour:
@@ -8217,11 +8217,6 @@ Transform:
   m_Father: {fileID: 1537909136}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1725970207 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1063038225727046633, guid: 927f94f39d514e94fbbeaeef9929bd00, type: 3}
-  m_PrefabInstance: {fileID: 1546437948}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1726431591
 GameObject:
   m_ObjectHideFlags: 0

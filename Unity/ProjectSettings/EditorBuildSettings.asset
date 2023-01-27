@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Slice_game_mini2/Slice_game_mini2.unity
     guid: 5db53733e45a4b445b2fb6c14297a6fa
+  - enabled: 1
+    path: Assets/Scenes/EK/Mini1.unity
+    guid: fb51557f5acf8214da0b7011ebe7ab83
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 808c32e1eb655074999d4f261345730f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 99f34b2f308b2f6459a2552e448c7d81, type: 2}
