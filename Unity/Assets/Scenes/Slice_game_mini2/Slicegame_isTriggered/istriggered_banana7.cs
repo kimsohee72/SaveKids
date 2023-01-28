@@ -5,6 +5,9 @@ using UnityEngine;
 public class istriggered_banana7 : MonoBehaviour
 {
     public int banana7;
+    public GameObject SliceSFX;
+    AudioSource sliceSFX;
+    int count;
 
     // Start is called before the first frame update
     void Start()

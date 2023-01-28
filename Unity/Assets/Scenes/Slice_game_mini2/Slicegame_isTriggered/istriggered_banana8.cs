@@ -8,10 +8,15 @@ public class istriggered_banana8 : MonoBehaviour
     public GameObject ThisBanana1;
     public GameObject nextBanana1;
     public bool banana8;
+    public GameObject SliceSFX;
+    AudioSource sliceSFX;
+    int count;
 
     // Start is called before the first frame update
     void Start()
     {
+        count = 0;
+        sliceSFX = SliceSFX.GetComponent<AudioSource>();
         ThisBanana1.tag = "Slice";
         nextBanana1.tag = "NotSlice";
         ThisBanana1.layer = 6;
@@ -31,8 +36,13 @@ public class istriggered_banana8 : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
 	{
-        if(col.gameObject.tag == "Knife")
+        if(col.gameObject.tag == "Knife" && this.gameObject.tag == "Slice")
 		{
+            if (count == 0)
+            {
+                sliceSFX.Play();
+                count += 1;
+            }
             banana8 = true;
             Bananaguideline1.SetActive(false);
             nextBanana1.tag = "Slice";
