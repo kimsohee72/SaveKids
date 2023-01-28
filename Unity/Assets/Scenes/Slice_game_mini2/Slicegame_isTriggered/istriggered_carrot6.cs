@@ -8,10 +8,15 @@ public class istriggered_carrot6 : MonoBehaviour
     public GameObject ThisCarrot6;
     public GameObject nextCarrot6;
     public bool carrot6;
+    public GameObject SliceSFX;
+    AudioSource sliceSFX;
+    int count;
 
     // Start is called before the first frame update
     void Start()
     {
+        count = 0;
+        sliceSFX = SliceSFX.GetComponent<AudioSource>();
         ThisCarrot6.tag = "NotSlice";
         nextCarrot6.tag = "NotSlice";
         ThisCarrot6.layer = 5;
@@ -30,8 +35,13 @@ public class istriggered_carrot6 : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
 	{
-        if(col.gameObject.tag == "Knife")
+        if(col.gameObject.tag == "Knife" && this.gameObject.tag == "Slice")
 		{
+            if (count == 0)
+            {
+                sliceSFX.Play();
+                count += 1;
+            }
             carrot6 = true;
             guideline6.SetActive(false);
             nextCarrot6.tag = "Slice";

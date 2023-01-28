@@ -5,10 +5,15 @@ using UnityEngine;
 public class istriggered_banana1 : MonoBehaviour
 {
     public bool banana1;
+    public GameObject SliceSFX;
+    AudioSource sliceSFX;
+    int count;
 
     // Start is called before the first frame update
     void Start()
     {
+        count = 0;
+        sliceSFX = SliceSFX.GetComponent<AudioSource>();
         banana1 = false;
     }
 
@@ -20,8 +25,13 @@ public class istriggered_banana1 : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
 	{
-        if(col.gameObject.tag == "Knife")
+        if(col.gameObject.tag == "Knife" && this.gameObject.tag == "Slice")
 		{
+            if (count == 0)
+            {
+                sliceSFX.Play();
+                count += 1;
+            }
             banana1 = true;
         }
 	}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.605517, g: 0.5493037, b: 0.64546186, a: 1}
+  m_IndirectSpecularColor: {r: 0.60577905, g: 0.5495826, b: 0.6456542, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3552,6 +3552,10 @@ PrefabInstance:
       value: -0.2378
       objectReference: {fileID: 0}
     - target: {fileID: 2570777071729056168, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
+    - target: {fileID: 2570777071729056168, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
       propertyPath: ThisBanana3
       value: 
       objectReference: {fileID: 634034929}
@@ -3612,6 +3616,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3062211485916570200, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
+    - target: {fileID: 3062211485916570200, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
       propertyPath: ThisBanana1
       value: 
       objectReference: {fileID: 634034923}
@@ -3627,6 +3635,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.0016
       objectReference: {fileID: 0}
+    - target: {fileID: 3168092670882689854, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
     - target: {fileID: 3225107961457760789, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2687
@@ -3727,6 +3739,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6419532137849908388, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
     - target: {fileID: 6419532137849908388, guid: 5d9f9443e59772640a9936d35c712616, type: 3}
       propertyPath: ThisBanana2
       value: 
@@ -4210,6 +4226,10 @@ PrefabInstance:
       value: 0.017
       objectReference: {fileID: 0}
     - target: {fileID: 158619106973170099, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
+    - target: {fileID: 158619106973170099, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
       propertyPath: guideline
       value: 
       objectReference: {fileID: 152318833}
@@ -4258,6 +4278,10 @@ PrefabInstance:
       value: 0.022
       objectReference: {fileID: 0}
     - target: {fileID: 1009049928064548287, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
+    - target: {fileID: 1009049928064548287, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
       propertyPath: guideline
       value: 
       objectReference: {fileID: 152318835}
@@ -4281,6 +4305,10 @@ PrefabInstance:
       propertyPath: nextCarrot1
       value: 
       objectReference: {fileID: 760378155}
+    - target: {fileID: 1422404952891743136, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
     - target: {fileID: 1422404952891743136, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
       propertyPath: guideline
       value: 
@@ -4374,6 +4402,10 @@ PrefabInstance:
       value: 0.022
       objectReference: {fileID: 0}
     - target: {fileID: 2458236197218073115, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
+    - target: {fileID: 2458236197218073115, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
       propertyPath: guideline
       value: 
       objectReference: {fileID: 152318834}
@@ -4397,6 +4429,10 @@ PrefabInstance:
       propertyPath: nextCarrot2
       value: 
       objectReference: {fileID: 760378154}
+    - target: {fileID: 3497547244812369027, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
     - target: {fileID: 3893500929285329640, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -4454,6 +4490,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5360135699960898901, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
+    - target: {fileID: 5360135699960898901, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
       propertyPath: guideline
       value: 
       objectReference: {fileID: 152318831}
@@ -4485,6 +4525,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NotSlice
       objectReference: {fileID: 0}
+    - target: {fileID: 6939684502748961043, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
     - target: {fileID: 6939684502748961043, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
       propertyPath: guideline
       value: 
@@ -4577,6 +4621,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NotSlice
       objectReference: {fileID: 0}
+    - target: {fileID: 8906752957395539758, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
     - target: {fileID: 8906752957395539758, guid: 58ce10857cb47f44aadde8f267b0e35d, type: 3}
       propertyPath: guideline
       value: 
@@ -5318,7 +5366,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927819846}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.4065688, y: 0.97987336, z: -1.6321547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5661,8 +5709,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: eda7a0811b6ba2144903a5e64c3d5df2, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -7668,7 +7716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137653842}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -3.254, y: 0.484, z: 1.489}
+  m_LocalPosition: {x: -3.254, y: 0.484, z: 1.847}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7804,6 +7852,14 @@ PrefabInstance:
     - target: {fileID: 136863387, guid: 45beec86c061b85488d426c5e0575707, type: 3}
       propertyPath: m_Center.z
       value: 0.08528137
+      objectReference: {fileID: 0}
+    - target: {fileID: 136863390, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: SliceSFX
+      value: 
+      objectReference: {fileID: 1096398205}
+    - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
+      propertyPath: m_ThrowOnDetach
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1999104153, guid: 45beec86c061b85488d426c5e0575707, type: 3}
       propertyPath: m_TrackRotation
