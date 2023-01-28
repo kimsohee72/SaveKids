@@ -10,11 +10,11 @@ public class apple : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num;
-    int far_num;
+    int near_num, far_num, house;
     TMP_Text info;
     public GameObject Apple;
     public GameObject text;
+    Transform target;
 
     void Start()
     {
@@ -28,6 +28,7 @@ public class apple : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
+        house = LayerMask.NameToLayer("house");
     }
 
     void FixedUpdate()
@@ -47,6 +48,11 @@ public class apple : MonoBehaviour
             info.color = new Color(0, 0, 1, 1);
             gameManager.apple = true;
             Apple.GetComponent<XRGrabInteractable>().enabled = false;
+        }
+        else if (Physics.Raycast(ray, 0.01f, 1 << house))
+        {
+            target = Apple.GetComponent<Transform>();
+            target.position = new Vector3(-0.42f, 03214514f, 0.787f);
         }
     }
 }

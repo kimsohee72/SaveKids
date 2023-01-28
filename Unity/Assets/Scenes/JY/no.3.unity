@@ -5439,7 +5439,7 @@ GameObject:
   - component: {fileID: 1104956908}
   - component: {fileID: 1104956907}
   - component: {fileID: 1104956906}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13393,6 +13393,10 @@ PrefabInstance:
     - target: {fileID: 8429626568213732773, guid: 9239f0afb1837ae4c9dfad74916b81b0, type: 3}
       propertyPath: m_Name
       value: Assets(ALL)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429626568213732773, guid: 9239f0afb1837ae4c9dfad74916b81b0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8431481180421451998, guid: 9239f0afb1837ae4c9dfad74916b81b0, type: 3}
       propertyPath: m_Layer
