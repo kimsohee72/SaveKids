@@ -5,6 +5,7 @@ using UnityEngine;
 public class no5_END : MonoBehaviour
 {
     public Animator animator;
+    public GameObject 접시클릭;
 
     public GameObject end_menu;
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class no5_END : MonoBehaviour
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("박수"))
         {
             end_menu.SetActive(true);
+            접시클릭.SetActive(false);
         }
     }
     
