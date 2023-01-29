@@ -10,11 +10,11 @@ public class cherry : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num;
-    int far_num;
+    int near_num, far_num, house;
     TMP_Text info;
     public GameObject Cherry;
     public GameObject text;
+    Transform target;
 
     void Start()
     {
@@ -28,11 +28,14 @@ public class cherry : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
+        house = LayerMask.NameToLayer("House");
     }
 
     void FixedUpdate()
     {
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
+
+        //Debug.Log(rigid.position);
 
         if (Physics.Raycast(ray, 0.001f, 1 << near_num))
         {
@@ -47,6 +50,12 @@ public class cherry : MonoBehaviour
             info.color = new Color(0, 0, 1, 1);
             gameManager.cherry = true;
             Cherry.GetComponent<XRGrabInteractable>().enabled = false;
+        }
+        else if (Physics.Raycast(ray, 0.05f, 1 << house))
+        {
+            target = Cherry.GetComponent<Transform>();
+            target.position = new Vector3(-2.91f, 1.00f, 1.02f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
