@@ -15,6 +15,7 @@ public class banana : MonoBehaviour
     public GameObject Banana;
     public GameObject text;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -40,22 +41,25 @@ public class banana : MonoBehaviour
         if (Physics.Raycast(ray, 0.03f, 1 << near_num))
         {
             //Debug.Log("near");
-            info.text = "¹Ù³ª³ª";
+            info.text = "ë°”ë‚˜ë‚˜";
             info.color = new Color(0, 0, 1, 1);
             gameManager.banana = true;
             Banana.GetComponent<XRGrabInteractable>().enabled = false;
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.03f, 1 << far_num))
         {
             //Debug.Log("far");
-            info.text = "¹Ù³ª³ª";
+            info.text = "ë°”ë‚˜ë‚˜";
             info.color = new Color(1, 0, 0, 1);
+            setting.Play();
         }
         else if(Physics.Raycast(ray,0.5f, 1 << house))
         {
             target = Banana.GetComponent<Transform>();
             target.position = new Vector3(-3.13f, 1.00f, 1.00f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }

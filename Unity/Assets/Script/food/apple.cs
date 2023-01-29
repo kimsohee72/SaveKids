@@ -15,6 +15,7 @@ public class apple : MonoBehaviour
     public GameObject Apple;
     public GameObject text;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -40,22 +41,25 @@ public class apple : MonoBehaviour
         if (Physics.Raycast(ray, 0.01f, 1 << near_num))
         {
             //Debug.Log("near");
-            info.text = "»ç°ú";
+            info.text = "ì‚¬ê³¼";
             info.color = new Color(1, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {
             //Debug.Log("far");
-            info.text = "»ç°ú";
+            info.text = "ì‚¬ê³¼";
             info.color = new Color(0, 0, 1, 1);
             gameManager.apple = true;
             Apple.GetComponent<XRGrabInteractable>().enabled = false;
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
             target = Apple.GetComponent<Transform>();
             target.position = new Vector3(-3.12f, 1.00f, 1.20f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }

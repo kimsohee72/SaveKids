@@ -14,6 +14,7 @@ public class block : MonoBehaviour
     public GameObject text;
     Transform target;
     public GameObject Block;
+    public AudioSource setting;
 
     void Start()
     {
@@ -39,14 +40,16 @@ public class block : MonoBehaviour
         {
             //Debug.Log("good");
             gameManager.block = true;
-            list.text = "- ∫Ì∑œ";
-            list.color = new Color(0, 0, 1, 1);
+            list.text = "Î∏îÎ°ù";
+            list.color = new Color(0, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
             target = Block.GetComponent<Transform>();
             target.position = new Vector3(-5.02f, 0.10f, 8.82f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }
