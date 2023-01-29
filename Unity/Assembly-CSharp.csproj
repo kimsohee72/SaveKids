@@ -235,6 +235,9 @@
     <Compile Include="Assets\Script\toy\text_no5.cs" />
     <Compile Include="Assets\minigame_eunhyang\script\spawn_doll.cs" />
     <Compile Include="Assets\minigame_eunhyang\script\spawn.cs" />
+    <Compile Include="Assets\Script\toy\frisbee.cs" />
+    <Compile Include="Assets\Script\toy\boat.cs" />
+    <Compile Include="Assets\Script\toy\wagon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

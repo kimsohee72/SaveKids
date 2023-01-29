@@ -8,6 +8,9 @@ TagManager:
   - Toy
   - safe
   - danger
+  - Slice
+  - Knife
+  - NotSlice
   layers:
   - Default
   - TransparentFX
@@ -23,9 +26,9 @@ TagManager:
   - safe
   - danger
   - toy
-  - 
-  - 
-  - 
+  - high
+  - low
+  - wating
   - 
   - 
   - 
