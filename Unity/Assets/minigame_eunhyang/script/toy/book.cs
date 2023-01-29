@@ -32,7 +32,7 @@ public class book : MonoBehaviour
         if (Physics.Raycast(ray, 0.1f, 1 << low))
         {
             //Debug.Log("low");
-            list.text = "å";
+            list.text = "책";
             list.color = new Color(0, 0, 0, 1);
         }
     }
