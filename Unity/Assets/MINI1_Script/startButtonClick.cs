@@ -18,6 +18,9 @@ public class startButtonClick : MonoBehaviour
     GameObject panelGuide2;
     GameObject panelGuide3;
 
+    GameObject babyChair;
+    GameObject bib;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -34,6 +37,8 @@ public class startButtonClick : MonoBehaviour
         panelGuide1 = GameObject.Find("PanelGuide1");
         panelGuide2 = GameObject.Find("PanelGuide2");
         panelGuide3 = GameObject.Find("PanelGuide3");
+        babyChair = GameObject.Find("HighChair_01");
+        bib = GameObject.Find("Bib_01");
 
         baby.SetActive(false);
         rattle.SetActive(false);
@@ -45,6 +50,8 @@ public class startButtonClick : MonoBehaviour
         panelGuide1.SetActive(false);
         panelGuide2.SetActive(false);
         panelGuide3.SetActive(false);
+        babyChair.SetActive(false);
+        bib.SetActive(false);
 
     }
 
@@ -65,6 +72,8 @@ public class startButtonClick : MonoBehaviour
         panelStart.SetActive(false);
         panelGuide.SetActive(true);
         panelGuide1.SetActive(true);
+        babyChair.SetActive(true);
+        bib.SetActive(true);
 
     }
 }

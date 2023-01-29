@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &22423424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22423423}
-  m_LocalRotation: {x: 0.24184473, y: 0.66446304, z: -0.24184473, w: 0.66446304}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -2.849, y: 1.309, z: 6.023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -172,7 +172,7 @@ Transform:
   - {fileID: 127695922}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 40, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &77462812
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,7 +957,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &130421976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<\uC6B8\uBA74\uC11C \uC2DD\uC0AC\uB294 \uAE08\uC9C0!>"
+  m_text: "<\uC544\uC774\uAC00 \uC6B8\uACE0 \uC788\uC744 \uB550?>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
   m_sharedMaterial: {fileID: 7338381612882335306, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
@@ -2142,7 +2142,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526861052}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 5.148}
+  m_LocalPosition: {x: 0, y: 0, z: 5.568}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2154,7 +2154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.803, y: 2.941}
+  m_AnchoredPosition: {x: -2.608, y: 2.132}
   m_SizeDelta: {x: 2.048, y: 0.259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &555163459
@@ -4413,7 +4413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.803, y: 1.5}
+  m_AnchoredPosition: {x: -0.5, y: 1.5}
   m_SizeDelta: {x: 9.2929, y: 3.579}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1393155567
@@ -5986,7 +5986,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<\uC6B8\uBA74\uC11C \uC2DD\uC0AC\uB294 \uAE08\uC9C0!>\n\n\uC544\uC774\uC5D0\uAC8C         
+  m_text: "<\uC544\uC774\uAC00 \uC6B8\uACE0 \uC788\uC744 \uB550?>\n\n\uC544\uC774\uC5D0\uAC8C         
     \uBC25\uC744 \uBA39\uC774\uBA74 \uC131\uACF5 !!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
@@ -6740,7 +6740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2.803, y: 1.5}
+  m_AnchoredPosition: {x: -0.5, y: 1.5}
   m_SizeDelta: {x: 9.2929, y: 3.579}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2134575332
