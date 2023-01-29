@@ -487,20 +487,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &7038411740074269660
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336613861688599695}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.12946804
-  m_Height: 0.38138956
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.19037154, z: -0.0106942095}
 --- !u!114 &7038411740074269667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,22 +607,6 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &7038411740074269670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336613861688599695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74ad5f88ff04a8740b69399a9ca8f4d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "\uC811\uC2DC": {fileID: 0}
-  "\uC778\uD615": {fileID: 0}
-  "\uC778\uD615\uD074\uB9AD": {fileID: 0}
-  "\uC811\uC2DC\uD074\uB9AD": {fileID: 0}
 --- !u!4 &2654804778396751516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 7006c80f28486e7489516fad7a3d5daa, type: 3}

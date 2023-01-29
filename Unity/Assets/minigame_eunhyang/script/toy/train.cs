@@ -32,7 +32,7 @@ public class train : MonoBehaviour
         if (Physics.Raycast(ray, 0.1f, 1 << low))
         {
             //Debug.Log("low");
-            list.text = "±âÂ÷";
+            list.text = "ê¸°ì°¨";
             list.color = new Color(0, 0, 0, 1);
         }
     }
