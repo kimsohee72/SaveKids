@@ -9,9 +9,11 @@ public class battery : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num;
+    int near_num,num;
     TMP_Text list;
     public GameObject text;
+    Transform target;
+    public GameObject Battery;
 
     void Start()
     {
@@ -24,11 +26,14 @@ public class battery : MonoBehaviour
         ray = new Ray(rigid.position, Vector3.down);
 
         near_num = LayerMask.NameToLayer("near");
+        num = LayerMask.NameToLayer("waiting");
     }
 
     void FixedUpdate()
     {
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
+
+        //Debug.Log(rigid.position);
 
         if (Physics.Raycast(ray, 0.2f, 1 << near_num))
         {
@@ -36,6 +41,12 @@ public class battery : MonoBehaviour
             gameManager.battery = true;
             list.text = "- ¹èÅÍ¸®";
             list.color = new Color(0, 0, 1, 1);
+        }
+        else if (Physics.Raycast(ray, 0.2f, 1 << num))
+        {
+            target = Battery.GetComponent<Transform>();
+            target.position = new Vector3(-1.30f, 0.11f, 9.63f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
