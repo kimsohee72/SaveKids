@@ -20,6 +20,10 @@ public class babyAction : MonoBehaviour
 
     public GameObject panelEnd;
 
+    public GameObject panel1;
+    public GameObject panel2;
+    public GameObject panel3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +76,10 @@ public class babyAction : MonoBehaviour
 
             isCrying = false;
             animator.SetBool("isCrying", isCrying);
+
+            panel1.SetActive(false);
+            panel2.SetActive(false);
+            panel3.SetActive(true);
         }
 
         if (notCryingTimeElapsed > 20.0 && notCryingStartTimer == true)
@@ -81,6 +89,10 @@ public class babyAction : MonoBehaviour
 
             isCrying = true;
             animator.SetBool("isCrying", isCrying);
+
+            panel1.SetActive(true);
+            panel2.SetActive(false);
+            panel3.SetActive(false);
         }
 
         if (isEating == true)//&& iscrying true
