@@ -6,7 +6,7 @@ public class spoonmove : MonoBehaviour
 {
     public GameObject spoon;
     Vector3 init = new Vector3((float)-2.7,(float)0.45,(float)7.6);
-    Vector3 destination = new Vector3((float)-2.9, 1, 9);
+    Vector3 destination = new Vector3((float)-2.9, (float)0.8, (float)9.6);
 
     void FixedUpdate()
     {

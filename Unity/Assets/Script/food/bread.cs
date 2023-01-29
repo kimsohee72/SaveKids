@@ -10,11 +10,11 @@ public class bread : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num;
-    int far_num;
+    int near_num, far_num, house;
     TMP_Text info; 
     public GameObject Bread;
     public GameObject text;
+    Transform target;
 
     void Start()
     {
@@ -47,6 +47,7 @@ public class bread : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
+        house = LayerMask.NameToLayer("House");
     }
 
     void FixedUpdate()
@@ -54,6 +55,8 @@ public class bread : MonoBehaviour
         //Debug.Log(ray);
         //ray = new Ray(rigid.position, Vector3.down);
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
+
+        //Debug.Log(rigid.position);
 
         //if (Physics.Raycast(ray, 0.01f, worldLayer))
         if (Physics.Raycast(ray, 0.05f, 1 << near_num))
@@ -75,6 +78,12 @@ public class bread : MonoBehaviour
             //far_clicked();
             info.text = "»§";
             info.color = new Color(1, 0, 0, 1);
+        }
+        else if (Physics.Raycast(ray, 0.1f, 1 << house))
+        {
+            target = Bread.GetComponent<Transform>();
+            target.position = new Vector3(-2.70f, 1.00f, 1.22f);
+            target.rotation = Quaternion.Euler(0, 180, 0);
         }
 
         //Debug.Log(info.color);
