@@ -38,13 +38,18 @@ public class baby_animator2 : MonoBehaviour
        if(animator.GetBool("Looking") == true){
             if(other.tag == "Player"){
             animator.SetBool("Disgorge", true);
+            animator.SetBool("Looking", false);
             //audioSource.playOnAwake=true;
             audioSource.Play();
+            //Destroy(audioSource);        
             접시안내.SetActive(false);
             접시클릭.SetActive(false);
 
             }
         }
+        /*else if(animator.GetBool("Disgorge") == true){
+            audioSource.playOnAwake=false;
+        }*/
         
     }
 
