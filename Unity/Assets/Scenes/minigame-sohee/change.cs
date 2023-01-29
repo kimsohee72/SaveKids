@@ -36,5 +36,9 @@ public class change : MonoBehaviour
             lie.GetComponent<AudioSource>().enabled = true;
             a++;
         }
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("freefall"))
+        {
+            lie.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 }

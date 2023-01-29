@@ -9,9 +9,11 @@ public class block : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num;
+    int near_num,num;
     TMP_Text list;
     public GameObject text;
+    Transform target;
+    public GameObject Block;
 
     void Start()
     {
@@ -24,11 +26,14 @@ public class block : MonoBehaviour
         ray = new Ray(rigid.position, Vector3.down);
 
         near_num = LayerMask.NameToLayer("near");
+        num = LayerMask.NameToLayer("waiting");
     }
 
     void FixedUpdate()
     {
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
+
+        //Debug.Log(rigid.position);
 
         if (Physics.Raycast(ray, 0.1f, 1 << near_num))
         {
@@ -36,6 +41,12 @@ public class block : MonoBehaviour
             gameManager.block = true;
             list.text = "- ºí·Ï";
             list.color = new Color(0, 0, 1, 1);
+        }
+        else if (Physics.Raycast(ray, 0.1f, 1 << num))
+        {
+            target = Block.GetComponent<Transform>();
+            target.position = new Vector3(-5.02f, 0.10f, 8.82f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

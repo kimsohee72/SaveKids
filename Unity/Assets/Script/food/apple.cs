@@ -28,12 +28,14 @@ public class apple : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
-        house = LayerMask.NameToLayer("house");
+        house = LayerMask.NameToLayer("House");
     }
 
     void FixedUpdate()
     {
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
+
+        //Debug.Log(rigid.position);
 
         if (Physics.Raycast(ray, 0.01f, 1 << near_num))
         {
@@ -49,10 +51,11 @@ public class apple : MonoBehaviour
             gameManager.apple = true;
             Apple.GetComponent<XRGrabInteractable>().enabled = false;
         }
-        else if (Physics.Raycast(ray, 0.01f, 1 << house))
+        else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
             target = Apple.GetComponent<Transform>();
-            target.position = new Vector3(-0.42f, 03214514f, 0.787f);
+            target.position = new Vector3(-3.12f, 1.00f, 1.20f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
