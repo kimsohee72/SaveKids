@@ -13,13 +13,12 @@ public class Slicegame_cutter : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Slice")
-        {   
+        {
             col.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             col.gameObject.GetComponent<Rigidbody>().AddTorque(-Vector3.up * 12000f, ForceMode.Impulse);
             randomAngle = new Vector3(Random.Range(-0.8f, -2f), Random.Range(0.2f, 0.3f), Random.Range(-2f, 2f));
 
             col.gameObject.GetComponent<Rigidbody>().AddForce(randomAngle * Random.Range(1, 3), ForceMode.Impulse);
-
         }
     }
 
