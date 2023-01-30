@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -39,6 +39,7 @@ public class teddybear : MonoBehaviour
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.teddybear = true;
+            Teddybear.GetComponent<spawn_bear>().enabled = false;
             Teddybear.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }

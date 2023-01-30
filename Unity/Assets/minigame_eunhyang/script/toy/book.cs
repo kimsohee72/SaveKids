@@ -39,6 +39,7 @@ public class book : MonoBehaviour
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.book = true;
+            Book.GetComponent<spawn_book>().enabled = false;
             Book.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -39,6 +39,7 @@ public class stacker : MonoBehaviour
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.stacker = true;
+            Stacker.GetComponent<spawn_stacker>().enabled = false;
             Stacker.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
