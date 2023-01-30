@@ -7,9 +7,10 @@ public class wagon : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int num;
+    int near_num, num;
     Transform target;
     public GameObject Wagon;
+    public AudioSource setting;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class wagon : MonoBehaviour
     void Update()
     {
         ray = new Ray(rigid.position, Vector3.down);
+        near_num = LayerMask.NameToLayer("near");
         num = LayerMask.NameToLayer("waiting");
     }
 
@@ -28,11 +30,16 @@ public class wagon : MonoBehaviour
 
         //Debug.Log(rigid.position);
 
-        if (Physics.Raycast(ray, 0.1f, 1 << num))
+        if (Physics.Raycast(ray, 0.1f, 1 << near_num))
+        {
+            setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
             target = Wagon.GetComponent<Transform>();
             target.position = new Vector3(-4.35f, 0.05f, 9.32f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }

@@ -15,6 +15,7 @@ public class blueberry : MonoBehaviour
     public GameObject Blueberry;
     public GameObject text;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -40,22 +41,25 @@ public class blueberry : MonoBehaviour
         if (Physics.Raycast(ray, 0.01f, 1 << near_num))
         {
             //Debug.Log("near");
-            info.text = "喉风海府";
+            info.text = "敫旊（氩犽Μ";
             info.color = new Color(1, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {
             //Debug.Log("far");
-            info.text = "喉风海府";
+            info.text = "敫旊（氩犽Μ";
             info.color = new Color(0, 0, 1, 1);
             gameManager.blueberry = true;
             Blueberry.GetComponent<XRGrabInteractable>().enabled = false;
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
             target = Blueberry.GetComponent<Transform>();
             target.position = new Vector3(-2.94f, 1.00f, 1.21f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }
