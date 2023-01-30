@@ -46,6 +46,7 @@ public class bell : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.2f, 1 << num))
         {
+            Debug.Log("waiting");
             target = Bell.GetComponent<Transform>();
             target.position = new Vector3(-4.05f, 0.21f, 10.35f);
             target.rotation = Quaternion.Euler(0, 0, 0);
