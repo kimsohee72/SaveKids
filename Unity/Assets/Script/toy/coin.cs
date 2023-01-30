@@ -46,6 +46,7 @@ public class coin : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
+            Debug.Log("waiting");
             target = Coin.GetComponent<Transform>();
             target.position = new Vector3(-2.58f, 0.04f, 8.94f);
             target.rotation = Quaternion.Euler(0, 0, 0);

@@ -46,6 +46,7 @@ public class chess : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
+            Debug.Log("waiting");
             target = Chess.GetComponent<Transform>();
             target.position = new Vector3(-4.83f, 1.17f, 9.44f);
             target.rotation = Quaternion.Euler(0, 0, 0);

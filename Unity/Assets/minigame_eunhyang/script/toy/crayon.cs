@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -39,6 +39,7 @@ public class crayon : MonoBehaviour
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.crayon = true;
+            Crayon.GetComponent<spawn_crayon>().enabled = false;
             Crayon.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
