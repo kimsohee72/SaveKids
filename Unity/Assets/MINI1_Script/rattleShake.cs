@@ -8,7 +8,6 @@ public class rattleShake : MonoBehaviour
     private XRGrabInteractable interactor = null;
     
     public bool isGrabbing;
-    bool audioPlaying = false;
     public  AudioSource audioSource;
 
     Transform rattleTransform;
@@ -18,12 +17,12 @@ public class rattleShake : MonoBehaviour
     public GameObject panel1;
     public GameObject panel2;
     public GameObject panel3;
+    public GameObject panel4;
 
     public void Start()
     {
         interactor = GetComponent<XRGrabInteractable>();
         isGrabbing = false;
-        audioPlaying = false;
 
         interactor.selectEntered.AddListener(grab);
         interactor.selectExited.AddListener(ungrab);
@@ -74,13 +73,12 @@ public class rattleShake : MonoBehaviour
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().startTimer = true;
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().animator.SetBool("isEating", GameObject.Find("ToonBabyA").GetComponent<babyAction>().isEating);
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().timeElapsed = 0;
-            Debug.Log("grab");
         }
-
         if (GameObject.Find("ToonBabyA").GetComponent<babyAction>().notCryingStartTimer == false) {
             panel1.SetActive(false);
             panel2.SetActive(true);
             panel3.SetActive(false);
+            panel4.SetActive(false);
         }
     }
     public void ungrab(BaseInteractionEventArgs arg)
@@ -91,7 +89,6 @@ public class rattleShake : MonoBehaviour
         {
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().startTimer = false;
             GameObject.Find("ToonBabyA").GetComponent<babyAction>().timeElapsed = 0;
-            Debug.Log("ungrab");
         }
 
         if (GameObject.Find("ToonBabyA").GetComponent<babyAction>().notCryingStartTimer == false)
@@ -99,6 +96,7 @@ public class rattleShake : MonoBehaviour
             panel1.SetActive(true);
             panel2.SetActive(false);
             panel3.SetActive(false);
+            panel4.SetActive(false);
         }
     }
 

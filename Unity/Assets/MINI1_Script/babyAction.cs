@@ -23,6 +23,10 @@ public class babyAction : MonoBehaviour
     public GameObject panel1;
     public GameObject panel2;
     public GameObject panel3;
+    public GameObject panel4;
+
+    bool warning = false;
+    public float warningTimeElapsed = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -55,50 +59,37 @@ public class babyAction : MonoBehaviour
         if (startTimer == true)
         {
             timeElapsed += UnityEngine.Time.deltaTime;
-         //   Debug.Log(timeElapsed + "\n");
         }
         else if(notCryingStartTimer == true)
         {
             notCryingTimeElapsed += UnityEngine.Time.deltaTime;
-
-         //   Debug.Log(notCryingTimeElapsed + "\n");
-            
         }
 
         if (timeElapsed > 2.0 && startTimer == true)
         {
+            timeElapsed = 0.0f;
             startTimer = false;
-            Debug.Log(timeElapsed);
 
             notCryingStartTimer = true;
             notCryingTimeElapsed = 0;
-            Debug.Log("bstart");
 
             isCrying = false;
             animator.SetBool("isCrying", isCrying);
-
-            panel1.SetActive(false);
-            panel2.SetActive(false);
-            panel3.SetActive(true);
         }
 
         if (notCryingTimeElapsed > 20.0 && notCryingStartTimer == true)
         {
             notCryingStartTimer = false;
-            Debug.Log(notCryingTimeElapsed);
+            notCryingTimeElapsed = 0.0f;
 
             isCrying = true;
             animator.SetBool("isCrying", isCrying);
-
-            panel1.SetActive(true);
-            panel2.SetActive(false);
-            panel3.SetActive(false);
         }
 
         if (isEating == true)//&& iscrying true
         {
             notCryingStartTimer = false;
-            Debug.Log("bquit");
+            notCryingTimeElapsed = 0.0f;
 
             isCrying = false;
             animator.SetBool("isEating", isEating);
@@ -108,26 +99,48 @@ public class babyAction : MonoBehaviour
 
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("End"))
         {
-            Debug.Log("adsf");
             panelEnd.SetActive(true);
         }
-        /*
-        if(Input.GetKeyDown(KeyCode.B) && notCryingStartTimer == true)
+
+        if (warning == true)
         {
-            notCryingStartTimer = false;
-            Debug.Log("bquit");
-
-            animator.SetBool("isEating", true);
-
-            animator.SetBool("isCrying", true);
-            
+            warningTimeElapsed += UnityEngine.Time.deltaTime;
         }
-        */
+
+        if(warningTimeElapsed>10.0f && warning == true)
+        {
+            warningTimeElapsed = 0.0f;
+            warning = false;
+        }
+
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("sit_idle4")
+            || animator.GetCurrentAnimatorStateInfo(0).IsName("sit_laugh"))
+        {
+            panel1.SetActive(false);
+            panel2.SetActive(false);
+            panel3.SetActive(false);
+            panel4.SetActive(false);
+        }
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("sit_idle_amazed"))
+        {
+            panel1.SetActive(false);
+            panel2.SetActive(false);
+            panel3.SetActive(true);
+            panel4.SetActive(false);
+        }
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("sit_cry") && warning == false && GameObject.Find("BabyRattle_01").GetComponent<rattleShake>().isGrabbing==false)
+        {
+            panel1.SetActive(true);
+            panel2.SetActive(false);
+            panel3.SetActive(false);
+            panel4.SetActive(false);
+        }
     }
     
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("OnTriggerEnter : " + other.name);
         if(other.name == "Spoon" && isEating == false && isCrying == false)
         {
             Debug.Log(checkEat);
@@ -135,11 +148,17 @@ public class babyAction : MonoBehaviour
             isEating = true;
             checkEat++;
             animator.SetInteger("countEat", checkEat);
-            Debug.Log(checkEat);
         }
         else if(other.name == "Spoon" && isCrying == true)
         {
-            Debug.Log("baby crying - focus on");
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("sit_cry"))
+            {
+                warning = true;
+                panel1.SetActive(false);
+                panel2.SetActive(false);
+                panel3.SetActive(false);
+                panel4.SetActive(true);
+            }
         }
     }
 }
