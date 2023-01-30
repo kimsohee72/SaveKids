@@ -15,7 +15,6 @@ public class beef : MonoBehaviour
     public GameObject Beef;
     public GameObject text;
     Transform target;
-    public AudioSource setting;
 
     void Start()
     {
@@ -41,25 +40,22 @@ public class beef : MonoBehaviour
         if (Physics.Raycast(ray, 0.01f, 1 << near_num))
         {
             //Debug.Log("near");
-            info.text = "ê³ ê¸° ì¡°ê°";
+            info.text = "°í±â Á¶°¢";
             info.color = new Color(1, 0, 0, 1);
-            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {
             //Debug.Log("far");
-            info.text = "ê³ ê¸° ì¡°ê°";
+            info.text = "°í±â Á¶°¢";
             info.color = new Color(0, 0, 1, 1);
             gameManager.beef = true;
             Beef.GetComponent<XRGrabInteractable>().enabled = false;
-            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
             target = Beef.GetComponent<Transform>();
             target.position = new Vector3(-2.70f, 1.00f, 1.05f);
             target.rotation = Quaternion.Euler(0, 0, 0);
-            setting.Play();
         }
     }
 }

@@ -1,8 +1,7 @@
-ï»¿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class marble : MonoBehaviour
 {
@@ -12,8 +11,6 @@ public class marble : MonoBehaviour
     int high;
     TMP_Text list;
     public GameObject text;
-    public GameManager gameManager;
-    public GameObject Marble;
 
     void Start()
     {
@@ -35,11 +32,8 @@ public class marble : MonoBehaviour
         if (Physics.Raycast(ray, 0.1f, 1 << high))
         {
             //Debug.Log("high");
-            list.text = "ìž‘ì€ êµ¬ìŠ¬";
+            list.text = "ÀÛÀº ±¸½½";
             list.color = new Color(0, 0, 0, 1);
-
-            gameManager.marble = true;
-            Marble.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }
