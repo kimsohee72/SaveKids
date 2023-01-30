@@ -1,8 +1,7 @@
-ï»¿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class teddybear : MonoBehaviour
 {
@@ -12,8 +11,6 @@ public class teddybear : MonoBehaviour
     int low;
     TMP_Text list;
     public GameObject text;
-    public GameManager gameManager;
-    public GameObject Teddybear;
 
     void Start()
     {
@@ -35,11 +32,8 @@ public class teddybear : MonoBehaviour
         if (Physics.Raycast(ray, 0.5f, 1 << low))
         {
             //Debug.Log("low");
-            list.text = "ê³°ì¸í˜•";
+            list.text = "°õÀÎÇü";
             list.color = new Color(0, 0, 0, 1);
-
-            gameManager.teddybear = true;
-            Teddybear.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

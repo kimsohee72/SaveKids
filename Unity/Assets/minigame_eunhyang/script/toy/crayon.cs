@@ -1,8 +1,7 @@
-ï»¿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class crayon : MonoBehaviour
 {
@@ -12,8 +11,6 @@ public class crayon : MonoBehaviour
     int high;
     TMP_Text list;
     public GameObject text;
-    public GameManager gameManager;
-    public GameObject Crayon;
 
     void Start()
     {
@@ -35,11 +32,8 @@ public class crayon : MonoBehaviour
         if (Physics.Raycast(ray, 0.01f, 1 << high))
         {
             //Debug.Log("high");
-            list.text = "ìž‘ì€ í¬ë ˆíŒŒìŠ¤";
+            list.text = "ÀÛÀº Å©·¹ÆÄ½º";
             list.color = new Color(0, 0, 0, 1);
-
-            gameManager.crayon = true;
-            Crayon.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

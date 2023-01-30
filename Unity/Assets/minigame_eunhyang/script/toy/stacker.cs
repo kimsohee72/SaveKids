@@ -1,8 +1,7 @@
-ï»¿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class stacker : MonoBehaviour
 {
@@ -12,8 +11,6 @@ public class stacker : MonoBehaviour
     int low;
     TMP_Text list;
     public GameObject text;
-    public GameObject Stacker;
-    public GameManager gameManager;
 
     void Start()
     {
@@ -35,11 +32,8 @@ public class stacker : MonoBehaviour
         if (Physics.Raycast(ray, 0.5f, 1 << low))
         {
             //Debug.Log("low");
-            list.text = "ë§ ìŠ¤íƒœì»¤";
+            list.text = "¸µ ½ºÅÂÄ¿";
             list.color = new Color(0, 0, 0, 1);
-
-            gameManager.stacker = true;
-            Stacker.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

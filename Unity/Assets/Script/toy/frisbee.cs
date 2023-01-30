@@ -7,10 +7,9 @@ public class frisbee : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, num;
+    int num;
     Transform target;
     public GameObject Frisbee;
-    public AudioSource setting;
 
     void Start()
     {
@@ -20,7 +19,6 @@ public class frisbee : MonoBehaviour
     void Update()
     {
         ray = new Ray(rigid.position, Vector3.down);
-        near_num = LayerMask.NameToLayer("near");
         num = LayerMask.NameToLayer("waiting");
     }
 
@@ -30,11 +28,7 @@ public class frisbee : MonoBehaviour
 
         //Debug.Log(rigid.position);
 
-        if (Physics.Raycast(ray, 0.1f, 1 << near_num))
-        {
-            setting.Play();
-        }
-        else if (Physics.Raycast(ray, 0.1f, 1 << num))
+        if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
             target = Frisbee.GetComponent<Transform>();
             target.position = new Vector3(-2.71f, 0.04f, 10.64f);
