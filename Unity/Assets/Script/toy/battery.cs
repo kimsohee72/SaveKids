@@ -46,6 +46,7 @@ public class battery : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.2f, 1 << num))
         {
+            Debug.Log("waiting");
             target = Battery.GetComponent<Transform>();
             target.position = new Vector3(-1.30f, 0.11f, 9.63f);
             target.rotation = Quaternion.Euler(0, 0, 0);

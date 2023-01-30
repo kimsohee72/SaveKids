@@ -36,6 +36,7 @@ public class frisbee : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
+            Debug.Log("waiting");
             target = Frisbee.GetComponent<Transform>();
             target.position = new Vector3(-2.71f, 0.04f, 10.64f);
             target.rotation = Quaternion.Euler(0, 0, 0);
