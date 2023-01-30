@@ -782,7 +782,7 @@ MonoBehaviour:
   gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 66176
   text: {fileID: 1890473402}
   Chess: {fileID: 3133621542148517782}
   setting: {fileID: 95780269}
@@ -1307,6 +1307,9 @@ MonoBehaviour:
   bell: 0
   ring: 0
   block: 0
+  wagon: 0
+  frisbee: 0
+  boat: 0
   ball: 0
   book: 0
   chessgame: 0
@@ -2574,7 +2577,7 @@ MonoBehaviour:
   gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 66176
   text: {fileID: 1890473402}
   Ring: {fileID: 3033273108732952342}
   setting: {fileID: 1386442681}
@@ -2842,7 +2845,7 @@ MonoBehaviour:
   gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 66176
   text: {fileID: 1890473402}
   Battery: {fileID: 1123692988182990}
   setting: {fileID: 1498656682}
@@ -6837,7 +6840,7 @@ MonoBehaviour:
   gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 66176
   text: {fileID: 1890473402}
   Coin: {fileID: 1950871496041021}
   setting: {fileID: 272934082}
@@ -9195,7 +9198,7 @@ MonoBehaviour:
   gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 66176
   text: {fileID: 1890473402}
   Block: {fileID: 5386821017140605757}
   setting: {fileID: 1051905690}
@@ -11042,7 +11045,7 @@ MonoBehaviour:
   gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 66176
   text: {fileID: 1890473402}
   Bell: {fileID: 2044058226}
   setting: {fileID: 948478421}
@@ -14383,9 +14386,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e57dc32ce3db104397235553f3302fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 66176
   Boat: {fileID: 4270137407717550261}
   setting: {fileID: 262978983}
 --- !u!1 &8218625871089542249
@@ -14441,9 +14445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7d8f7940f916244abe3e39c2c6408d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 66176
   Frisbee: {fileID: 8218625871089542249}
   setting: {fileID: 1671214112}
 --- !u!4 &8772955839803485866
@@ -14476,8 +14481,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1db056d303b8d48964bda62021fed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 196607895}
   worldLayer:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 66176
   Wagon: {fileID: 274542651000368531}
   setting: {fileID: 119151483}

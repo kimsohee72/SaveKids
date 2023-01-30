@@ -10,7 +10,7 @@ public class rice : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, far_num, house;
+    int near_num, far_num, house, num;
     TMP_Text info;
     public GameObject Rice;
     public GameObject text;
@@ -30,6 +30,7 @@ public class rice : MonoBehaviour
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
         house = LayerMask.NameToLayer("House");
+        num = LayerMask.NameToLayer("waiting");
     }
 
     void FixedUpdate()
@@ -60,6 +61,19 @@ public class rice : MonoBehaviour
             target.position = new Vector3(-3.32f, 1.00f, 1.20f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.1f, 1 << num))
+        {
+            target = Rice.GetComponent<Transform>();
+            target.position = new Vector3(-3.32f, 1.00f, 1.20f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
+        }
+        else
+        {
+            target = Rice.GetComponent<Transform>();
+            target.position = new Vector3(-3.32f, 1.00f, 1.20f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

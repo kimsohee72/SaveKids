@@ -1,11 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public bool apple, beef, banana, blueberry, bread, carrot, cheese, cherry, rice, watermelon;
-    public bool coin, battery, chess, bell, ring, block;
+    public bool coin, battery, chess, bell, ring, block, wagon, frisbee, boat;
     public bool ball, book, chessgame, crayon, magnet, marble, stacker, teddybear, train;
     GameObject Finish;
     public GameObject food, table, chair, spoon, plate, bib, check, info, list, ending;
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
             ending.SetActive(true);
         }
 
-        if (coin == true && battery == true && chess == true && bell == true && ring == true && block == true)
+        if (coin == true && battery == true && chess == true && bell == true && ring == true && block == true && wagon == false && frisbee == false && boat == false)
         {
             Debug.Log("6번 끝");
             toy.SetActive(false);

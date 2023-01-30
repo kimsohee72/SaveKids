@@ -10,7 +10,7 @@ public class apple : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, far_num, house;
+    int near_num, far_num, house, num;
     TMP_Text info;
     public GameObject Apple;
     public GameObject text;
@@ -30,6 +30,7 @@ public class apple : MonoBehaviour
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
         house = LayerMask.NameToLayer("House");
+        num = LayerMask.NameToLayer("waiting");
     }
 
     void FixedUpdate()
@@ -38,14 +39,14 @@ public class apple : MonoBehaviour
 
         //Debug.Log(rigid.position);
 
-        if (Physics.Raycast(ray, 0.01f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.05f, 1 << near_num))
         {
             //Debug.Log("near");
             info.text = "사과";
             info.color = new Color(1, 0, 0, 1);
             setting.Play();
         }
-        else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
+        else if (Physics.Raycast(ray, 0.05f, 1 << far_num))
         {
             //Debug.Log("far");
             info.text = "사과";
@@ -60,6 +61,19 @@ public class apple : MonoBehaviour
             target.position = new Vector3(-3.12f, 1.00f, 1.20f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.1f, 1 << num))
+        {
+            target = Apple.GetComponent<Transform>();
+            target.position = new Vector3(-3.12f, 1.00f, 1.20f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
+        }
+        else
+        {
+            target = Apple.GetComponent<Transform>();
+            target.position = new Vector3(-3.12f, 1.00f, 1.20f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
