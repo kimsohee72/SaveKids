@@ -15,6 +15,7 @@ public class cherry : MonoBehaviour
     public GameObject Cherry;
     public GameObject text;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -40,22 +41,25 @@ public class cherry : MonoBehaviour
         if (Physics.Raycast(ray, 0.001f, 1 << near_num))
         {
             //Debug.Log("near");
-            info.text = "Ã¼¸®";
+            info.text = "ì²´ë¦¬";
             info.color = new Color(1, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.001f, 1 << far_num))
         {
             //Debug.Log("far");
-            info.text = "Ã¼¸®";
+            info.text = "ì²´ë¦¬";
             info.color = new Color(0, 0, 1, 1);
             gameManager.cherry = true;
             Cherry.GetComponent<XRGrabInteractable>().enabled = false;
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.05f, 1 << house))
         {
             target = Cherry.GetComponent<Transform>();
             target.position = new Vector3(-2.91f, 1.00f, 1.02f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }

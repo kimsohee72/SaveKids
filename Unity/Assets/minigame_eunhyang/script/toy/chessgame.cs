@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class chessgame : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class chessgame : MonoBehaviour
     int high;
     TMP_Text list;
     public GameObject text;
+    public GameManager gameManager;
+    public GameObject Chessgame;
 
     void Start()
     {
@@ -32,8 +35,11 @@ public class chessgame : MonoBehaviour
         if (Physics.Raycast(ray, 0.5f, 1 << high))
         {
             //Debug.Log("high");
-            list.text = "ü��";
+            list.text = "체스";
             list.color = new Color(0, 0, 0, 1);
+
+            gameManager.chessgame = true;
+            Chessgame.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

@@ -39,6 +39,7 @@ public class baby_animator2 : MonoBehaviour
             if(other.tag == "Player"){
             animator.SetBool("Disgorge", true);
             animator.SetBool("Looking", false);
+            //animator.SetInteger("check", 0);;
             //audioSource.playOnAwake=true;
             audioSource.Play();
             //Destroy(audioSource);        

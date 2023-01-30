@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class train : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class train : MonoBehaviour
     int low;
     TMP_Text list;
     public GameObject text;
+    public GameManager gameManager;
+    public GameObject Train;
 
     void Start()
     {
@@ -34,6 +37,9 @@ public class train : MonoBehaviour
             //Debug.Log("low");
             list.text = "기차";
             list.color = new Color(0, 0, 0, 1);
+
+            gameManager.train = true;
+            Train.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

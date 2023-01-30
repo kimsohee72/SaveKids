@@ -15,6 +15,7 @@ public class carrot : MonoBehaviour
     public GameObject Carrot;
     public GameObject text;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -40,22 +41,25 @@ public class carrot : MonoBehaviour
         if (Physics.Raycast(ray, 0.0001f, 1 << near_num))
         {
             //Debug.Log("near");
-            info.text = "´ç±Ù";
+            info.text = "ë‹¹ê·¼";
             info.color = new Color(1, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.0001f, 1 << far_num))
         {
             //Debug.Log("far");
-            info.text = "´ç±Ù";
+            info.text = "ë‹¹ê·¼";
             info.color = new Color(0, 0, 1, 1);
             gameManager.carrot = true;
             Carrot.GetComponent<XRGrabInteractable>().enabled = false;
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
             target = Carrot.GetComponent<Transform>();
             target.position = new Vector3(-3.57f, 1.00f, 1.21f);
             target.rotation = Quaternion.Euler(0, 180, 0);
+            setting.Play();
         }
     }
 }
