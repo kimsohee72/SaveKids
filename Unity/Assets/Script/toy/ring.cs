@@ -46,6 +46,7 @@ public class ring : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
+            Debug.Log("waiting");
             target = Ring.GetComponent<Transform>();
             target.position = new Vector3(-3.19f, 0.06f, 11.60f);
             target.rotation = Quaternion.Euler(0, 0, 0);

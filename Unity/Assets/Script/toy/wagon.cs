@@ -36,6 +36,7 @@ public class wagon : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
+            Debug.Log("waiting");
             target = Wagon.GetComponent<Transform>();
             target.position = new Vector3(-4.35f, 0.05f, 9.32f);
             target.rotation = Quaternion.Euler(0, 0, 0);

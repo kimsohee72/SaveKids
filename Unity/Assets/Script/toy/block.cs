@@ -46,6 +46,7 @@ public class block : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
+            Debug.Log("waiting");
             target = Block.GetComponent<Transform>();
             target.position = new Vector3(-5.02f, 0.10f, 8.82f);
             target.rotation = Quaternion.Euler(0, 0, 0);
