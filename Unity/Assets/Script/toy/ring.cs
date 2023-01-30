@@ -14,6 +14,7 @@ public class ring : MonoBehaviour
     public GameObject text;
     Transform target;
     public GameObject Ring;
+    public AudioSource setting;
 
     void Start()
     {
@@ -39,14 +40,16 @@ public class ring : MonoBehaviour
         {
             //Debug.Log("good");
             gameManager.ring = true;
-            list.text = "- ¹ÝÁö";
-            list.color = new Color(0, 0, 1, 1);
+            list.text = "ë°˜ì§€";
+            list.color = new Color(0, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
             target = Ring.GetComponent<Transform>();
             target.position = new Vector3(-3.19f, 0.06f, 11.60f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }

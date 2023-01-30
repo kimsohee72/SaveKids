@@ -14,6 +14,7 @@ public class chess : MonoBehaviour
     public GameObject text;
     public GameObject Chess;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -39,14 +40,16 @@ public class chess : MonoBehaviour
         {
             //Debug.Log("good");
             gameManager.chess = true;
-            list.text = "- √ºΩ∫∏ª";
-            list.color = new Color(0, 0, 1, 1);
+            list.text = "Ï≤¥Ïä§Îßê";
+            list.color = new Color(0, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
             target = Chess.GetComponent<Transform>();
             target.position = new Vector3(-4.83f, 1.17f, 9.44f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }

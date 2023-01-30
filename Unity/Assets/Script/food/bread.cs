@@ -15,6 +15,7 @@ public class bread : MonoBehaviour
     public GameObject Bread;
     public GameObject text;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -65,10 +66,11 @@ public class bread : MonoBehaviour
             //correct_near.SetActive(true);
             //wrong_near.SetActive(false);
             //near_clicked();
-            info.text = "»§";
+            info.text = "ë¹µ";
             info.color = new Color(0, 0, 1, 1);
             gameManager.bread = true;
             Bread.GetComponent<XRGrabInteractable>().enabled = false;
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.05f, 1 << far_num))
         {
@@ -76,14 +78,16 @@ public class bread : MonoBehaviour
             //correct_near.SetActive(false);
             //wrong_near.SetActive(true);
             //far_clicked();
-            info.text = "»§";
+            info.text = "ë¹µ";
             info.color = new Color(1, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
             target = Bread.GetComponent<Transform>();
             target.position = new Vector3(-2.70f, 1.00f, 1.22f);
             target.rotation = Quaternion.Euler(0, 180, 0);
+            setting.Play();
         }
 
         //Debug.Log(info.color);

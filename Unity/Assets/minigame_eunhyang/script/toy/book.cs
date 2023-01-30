@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class book : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class book : MonoBehaviour
     int low;
     TMP_Text list;
     public GameObject text;
+    public GameManager gameManager;
+    public GameObject Book;
 
     void Start()
     {
@@ -34,6 +37,9 @@ public class book : MonoBehaviour
             //Debug.Log("low");
             list.text = "책";
             list.color = new Color(0, 0, 0, 1);
+
+            gameManager.book = true;
+            Book.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

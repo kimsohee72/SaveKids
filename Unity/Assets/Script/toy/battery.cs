@@ -14,6 +14,7 @@ public class battery : MonoBehaviour
     public GameObject text;
     Transform target;
     public GameObject Battery;
+    public AudioSource setting;
 
     void Start()
     {
@@ -39,14 +40,16 @@ public class battery : MonoBehaviour
         {
             //Debug.Log("good");
             gameManager.battery = true;
-            list.text = "- πË≈Õ∏Æ";
-            list.color = new Color(0, 0, 1, 1);
+            list.text = "Î∞∞ÌÑ∞Î¶¨";
+            list.color = new Color(0, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.2f, 1 << num))
         {
             target = Battery.GetComponent<Transform>();
             target.position = new Vector3(-1.30f, 0.11f, 9.63f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }
