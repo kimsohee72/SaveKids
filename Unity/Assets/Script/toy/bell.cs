@@ -14,6 +14,7 @@ public class bell : MonoBehaviour
     public GameObject text;
     public GameObject Bell;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -39,14 +40,16 @@ public class bell : MonoBehaviour
         {
             //Debug.Log("good");
             gameManager.bell = true;
-            list.text = "- Á¾";
-            list.color = new Color(0, 0, 1, 1);
+            list.text = "ì¢…";
+            list.color = new Color(0, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.2f, 1 << num))
         {
             target = Bell.GetComponent<Transform>();
             target.position = new Vector3(-4.05f, 0.21f, 10.35f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }
