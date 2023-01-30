@@ -10,6 +10,9 @@ public class endButton : MonoBehaviour
     GameObject rattle;
     GameObject spoon;
     GameObject bowl;
+    GameObject baby;
+    GameObject babySit;
+    GameObject babyTable;
     public GameObject panelEnd;
     public GameObject panelGuide;
 
@@ -22,12 +25,18 @@ public class endButton : MonoBehaviour
         rattle = GameObject.Find("BabyRattle_01");
         spoon = GameObject.Find("Spoon");
         bowl = GameObject.Find("Bowl_02");
+        baby = GameObject.Find("ToonBabyA");
+        babySit = GameObject.Find("HighChair_01");
+        babyTable = GameObject.Find("Bib_01");
         panelEnd = GameObject.Find("PanelEnd");
 
 
         rattle.SetActive(false);
         spoon.SetActive(false);
         bowl.SetActive(false);
+        baby.SetActive(false);
+        babySit.SetActive(false);
+        babyTable.SetActive(false);
         panelGuide.SetActive(false);
     }
 

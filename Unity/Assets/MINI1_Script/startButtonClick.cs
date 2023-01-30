@@ -63,8 +63,6 @@ public class startButtonClick : MonoBehaviour
 
     void pressButton()
     {
-        Debug.Log("press");
-
         baby.SetActive(true);
         rattle.SetActive(true);
         spoon.SetActive(true);
