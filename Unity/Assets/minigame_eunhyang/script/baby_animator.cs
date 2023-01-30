@@ -30,6 +30,7 @@ public class baby_animator : MonoBehaviour
         
         if(other.tag == "Toy"){
             animator.SetBool("Looking", true);
+            animator.SetInteger("check", 1);
             접시.SetActive(true);
             인형.SetActive(false);
             접시클릭.SetActive(true);
@@ -46,7 +47,8 @@ public class baby_animator : MonoBehaviour
 
     void OnTriggerExit(Collider other){ // select 됐을 때
         if(other.tag == "Toy"){
-        animator.SetBool("Looking", false);}
+        animator.SetBool("Looking", false);
+        animator.SetInteger("check", 0);}
     }
 
 }

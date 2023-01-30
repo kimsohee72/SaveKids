@@ -1,7 +1,8 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ball : MonoBehaviour
 {
@@ -11,29 +12,34 @@ public class ball : MonoBehaviour
     int low;
     TMP_Text list;
     public GameObject text;
+    public GameManager gameManager;
+    public GameObject Ball;
 
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
         if (text.activeSelf == true)
-            list = GameObject.Find("list_ball").GetComponent<TextMeshPro>(); // list_ball·Î ¸¸µé¾îµĞ text ÀÎ½Ä
+            list = GameObject.Find("list_ball").GetComponent<TextMeshPro>(); // list_ballë¡œ ë§Œë“¤ì–´ë‘” text ì¸ì‹
     }
 
     void Update()
     {
-        ray = new Ray(rigid.position, Vector3.down); // ¹°Ã¼ÀÇ ¹Ù´Ú¸é Áß¾Ó ±âÁØÀ¸·Î ray »ı¼º
-        low = LayerMask.NameToLayer("low"); // low¶ó°í ¸¸µé¾îµĞ layer¸¦ low¶ó´Â º¯¼ö¿¡ ÇÒ´ç
+        ray = new Ray(rigid.position, Vector3.down); // ë¬¼ì²´ì˜ ë°”ë‹¥ë©´ ì¤‘ì•™ ê¸°ì¤€ìœ¼ë¡œ ray ìƒì„±
+        low = LayerMask.NameToLayer("low"); // lowë¼ê³  ë§Œë“¤ì–´ë‘” layerë¥¼ lowë¼ëŠ” ë³€ìˆ˜ì— í• ë‹¹
     }
 
     void FixedUpdate()
     {
-        Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0)); // ray È®ÀÎÀ» À§ÇØ °ÔÀÓ ½ÇÇà ½Ã scene È­¸é¿¡¼­ ray°¡ º¸ÀÌ°Ô ÇØµÒ
+        Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0)); // ray í™•ì¸ì„ ìœ„í•´ ê²Œì„ ì‹¤í–‰ ì‹œ scene í™”ë©´ì—ì„œ rayê°€ ë³´ì´ê²Œ í•´ë‘ 
 
-        if (Physics.Raycast(ray, 0.5f, 1 << low)) // ray°¡ low ·¹ÀÌ¾î¿¡ ºÎµúÇûÀ» ¶§
+        if (Physics.Raycast(ray, 0.5f, 1 << low)) // rayê°€ low ë ˆì´ì–´ì— ë¶€ë”ªí˜”ì„ ë•Œ
         {
             //Debug.Log("low");
-            list.text = "°ø";
+            list.text = "ê³µ";
             list.color = new Color(0, 0, 0, 1);
+
+            gameManager.ball = true;
+            Ball.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
 }

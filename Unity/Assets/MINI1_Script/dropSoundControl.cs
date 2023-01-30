@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class dropSoundControl : MonoBehaviour
 {
-    AudioSource audioSource;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -15,13 +15,11 @@ public class dropSoundControl : MonoBehaviour
         audioSource.Stop();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void enter(Collision collision)
     {
-        //Debug.Log(collision.gameObject.name);
-        
-        if (collision.gameObject.name == "Spoon" || collision.gameObject.name == "BabyRattle_01")
+        if (collision.gameObject.name == "BPS_Table")
         {
-            Debug.Log("trigger");
+            audioSource.Stop();
             audioSource.Play();
         }
     }

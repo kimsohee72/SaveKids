@@ -15,6 +15,7 @@ public class cheese : MonoBehaviour
     public GameObject Cheese;
     public GameObject text;
     Transform target;
+    public AudioSource setting;
 
     void Start()
     {
@@ -40,22 +41,25 @@ public class cheese : MonoBehaviour
         if (Physics.Raycast(ray, 0.01f, 1 << near_num))
         {
             //Debug.Log("near");
-            info.text = "Ä¡Áî";
+            info.text = "ì¹˜ì¦ˆ";
             info.color = new Color(0, 0, 1, 1);
             gameManager.cheese = true;
             Cheese.GetComponent<XRGrabInteractable>().enabled = false;
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
         {
             //Debug.Log("far");
-            info.text = "Ä¡Áî";
+            info.text = "ì¹˜ì¦ˆ";
             info.color = new Color(1, 0, 0, 1);
+            setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
             target = Cheese.GetComponent<Transform>();
             target.position = new Vector3(-3.55f, 1.00f, 1.03f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
         }
     }
 }
