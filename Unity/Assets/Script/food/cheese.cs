@@ -69,7 +69,7 @@ public class cheese : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
         }
-        else
+        else if(rigid.position.y<0)
         {
             target = Cheese.GetComponent<Transform>();
             target.position = new Vector3(-3.55f, 1.00f, 1.03f);

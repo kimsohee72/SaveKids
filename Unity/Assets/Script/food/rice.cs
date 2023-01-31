@@ -48,7 +48,7 @@ public class rice : MonoBehaviour
             Rice.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
-        else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
+        else if (Physics.Raycast(ray, 0.05f, 1 << far_num))
         {
             //Debug.Log("far");
             info.text = "주먹밥";
@@ -69,7 +69,7 @@ public class rice : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
         }
-        else
+        else if(rigid.position.y < 0)
         {
             target = Rice.GetComponent<Transform>();
             target.position = new Vector3(-3.32f, 1.00f, 1.20f);

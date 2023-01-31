@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class block : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class block : MonoBehaviour
             gameManager.block = true;
             list.text = "블록";
             list.color = new Color(0, 0, 0, 1);
+            Block.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
@@ -57,7 +59,7 @@ public class block : MonoBehaviour
         {
             setting.Play();
         }
-        else
+        else if(rigid.position.y < -1.0f)
         {
             target = Block.GetComponent<Transform>();
             target.position = new Vector3(-5.02f, 0.10f, 8.82f);
