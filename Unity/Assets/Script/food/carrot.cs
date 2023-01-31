@@ -69,7 +69,7 @@ public class carrot : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 180, 0);
             setting.Play();
         }
-        else
+        else if(rigid.position.y < 0)
         {
             target = Carrot.GetComponent<Transform>();
             target.position = new Vector3(-3.57f, 1.00f, 1.21f);
