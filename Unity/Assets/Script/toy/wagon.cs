@@ -11,8 +11,7 @@ public class wagon : MonoBehaviour
     int near_num, num, house;
     Transform target;
     public GameObject Wagon;
-    public AudioSource setting;
-    
+    public AudioSource setting;    
 
     void Start()
     {
@@ -50,6 +49,7 @@ public class wagon : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
+            gameManager.wagon = false;
             setting.Play();
         }
         else if(rigid.position.y < -1.0f)
