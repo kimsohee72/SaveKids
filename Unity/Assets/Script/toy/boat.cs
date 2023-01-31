@@ -48,7 +48,7 @@ public class boat : MonoBehaviour
         {
             setting.Play();
         }
-        else
+        else if(rigid.position.y < -1.0f)
         {
             target = Boat.GetComponent<Transform>();
             target.position = new Vector3(-0.31f, 0.03f, 11.18f);

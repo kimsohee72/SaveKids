@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class bell : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class bell : MonoBehaviour
             gameManager.bell = true;
             list.text = "종";
             list.color = new Color(0, 0, 0, 1);
+            Bell.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.2f, 1 << num))
@@ -57,7 +59,7 @@ public class bell : MonoBehaviour
         {
             setting.Play();
         }
-        else
+        else if(rigid.position.y < 0)
         {
             target = Bell.GetComponent<Transform>();
             target.position = new Vector3(-4.05f, 0.21f, 10.35f);
