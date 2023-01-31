@@ -69,7 +69,7 @@ public class beef : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
         }
-        else
+        else if (rigid.position.y < 0)
         {
             target = Beef.GetComponent<Transform>();
             target.position = new Vector3(-2.70f, 1.00f, 1.05f);

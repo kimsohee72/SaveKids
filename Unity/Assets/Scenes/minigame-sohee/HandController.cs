@@ -11,7 +11,9 @@ public class HandController : MonoBehaviour
     public GameObject Run;
     public GameObject Canvas;
     public GameObject button;
+    public GameObject button1;
     public GameObject hint;
+    static int a = 0;
 
     public void buttonPush()
     {
@@ -77,7 +79,16 @@ public class HandController : MonoBehaviour
         anim.SetBool("dropit", true);
         baby.transform.position = new Vector3(-3, 0, 10);
         baby.transform.rotation = Quaternion.Euler(0, 180, 0);
-        button.gameObject.SetActive(true);
+        if (a == 0)
+        {
+            button.gameObject.SetActive(true);
+            a++;
+        }
+        else
+        {
+            button1.gameObject.SetActive(true);
+        }
+            
         baby.GetComponent<AudioSource>().enabled = false;
         baby.GetComponent<XRGrabInteractable>().enabled = false;
         hint.SetActive(false);

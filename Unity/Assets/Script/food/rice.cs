@@ -69,7 +69,7 @@ public class rice : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
         }
-        else
+        else if(rigid.position.y < 0)
         {
             target = Rice.GetComponent<Transform>();
             target.position = new Vector3(-3.32f, 1.00f, 1.20f);
