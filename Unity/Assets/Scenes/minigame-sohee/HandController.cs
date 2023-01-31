@@ -13,7 +13,7 @@ public class HandController : MonoBehaviour
     public GameObject button;
     public GameObject button1;
     public GameObject hint;
-    static bool ch = false;
+
     static int a = 0;
 
     public void buttonPush()
@@ -29,8 +29,7 @@ public class HandController : MonoBehaviour
     public void OnFirstHoverEntered()
     {
         Debug.Log($"{gameObject.name} - OnFirstHoverEntered");
-        if(ch == false)
-            Canvas.SetActive(true);
+        Canvas.SetActive(true);
 
     }
 
@@ -70,7 +69,7 @@ public class HandController : MonoBehaviour
         Debug.Log($"{gameObject.name} - OnSelectEntered");
         anim.SetBool("getit", true);
         Canvas.SetActive(false);
-        ch = true;
+
         Run.GetComponent<Rotate>().enabled = false;
         baby.GetComponent<AudioSource>().enabled = false;
     }
@@ -80,7 +79,7 @@ public class HandController : MonoBehaviour
         
         Debug.Log($"{gameObject.name} - OnSelectExited");
         anim.SetBool("dropit", true);
-        ch = false;
+
         baby.transform.position = new Vector3(-3, 0, 10);
         baby.transform.rotation = Quaternion.Euler(0, 180, 0);
         if (a == 0)
