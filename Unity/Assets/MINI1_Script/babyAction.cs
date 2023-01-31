@@ -28,6 +28,8 @@ public class babyAction : MonoBehaviour
     bool warning = false;
     public float warningTimeElapsed = 0;
 
+    public int babySounding = 0; // 0 : start, 1 : crying, 2 : amazed, 3 : eating, 4 : happy
+
     // Start is called before the first frame update
     void Start()
     {
@@ -107,7 +109,7 @@ public class babyAction : MonoBehaviour
             warningTimeElapsed += UnityEngine.Time.deltaTime;
         }
 
-        if(warningTimeElapsed>10.0f && warning == true)
+        if(warningTimeElapsed>3.0f && warning == true)
         {
             warningTimeElapsed = 0.0f;
             warning = false;

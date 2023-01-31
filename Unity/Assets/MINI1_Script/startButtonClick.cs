@@ -21,6 +21,8 @@ public class startButtonClick : MonoBehaviour
     GameObject babyChair;
     GameObject bib;
 
+    AudioSource aSource;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -53,6 +55,8 @@ public class startButtonClick : MonoBehaviour
         babyChair.SetActive(false);
         bib.SetActive(false);
 
+        aSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -63,6 +67,7 @@ public class startButtonClick : MonoBehaviour
 
     void pressButton()
     {
+        aSource.Play();
         baby.SetActive(true);
         rattle.SetActive(true);
         spoon.SetActive(true);
@@ -72,7 +77,6 @@ public class startButtonClick : MonoBehaviour
         panelGuide1.SetActive(true);
         babyChair.SetActive(true);
         bib.SetActive(true);
-
     }
 }
 
