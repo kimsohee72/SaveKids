@@ -15,10 +15,13 @@ public class endButton : MonoBehaviour
     GameObject babyTable;
     public GameObject panelEnd;
     public GameObject panelGuide;
+    AudioSource endAudio;
 
     // Start is called before the first frame update
     void Start()
     {
+        endAudio = GetComponent<AudioSource>();
+
         btnEnd = GetComponent<Button>();
         btnEnd.onClick.AddListener(pressButton);
 
@@ -42,6 +45,9 @@ public class endButton : MonoBehaviour
 
     void pressButton()
     {
+
+        //
+        endAudio.Play();
         SceneManager.LoadScene("main1");
     }
 }
