@@ -44,6 +44,7 @@ public class coin : MonoBehaviour
             gameManager.coin = true;
             list.text = "동전";
             list.color = new Color(0, 0, 0, 1);
+            Coin.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
@@ -52,7 +53,6 @@ public class coin : MonoBehaviour
             target = Coin.GetComponent<Transform>();
             target.position = new Vector3(-2.58f, 0.04f, 8.94f);
             target.rotation = Quaternion.Euler(0, 0, 0);
-            Coin.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
