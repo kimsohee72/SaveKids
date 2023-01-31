@@ -41,6 +41,7 @@ public class train : MonoBehaviour
             gameManager.train = true;
             Train.GetComponent<spawn_train>().enabled = false;
             Train.GetComponent<XRGrabInteractable>().enabled = false;
+            //Train.GetComponent<spawn_train>().enabled = false;
         }
     }
 }
