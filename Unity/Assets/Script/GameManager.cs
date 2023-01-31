@@ -12,12 +12,19 @@ public class GameManager : MonoBehaviour
     public GameObject toy, info_6, list_6, box, ending_6;
     public GameObject toy_7, list_7, ending_7, baby;
 
+    void oninvoke()
+    {
+
+    }
+
     void FixedUpdate()
     {
         Finish = GameObject.FindGameObjectWithTag("Finish");
 
         if (apple == true && beef == true && blueberry == true && banana == true && bread == true && carrot == true && cheese == true && rice == true && watermelon == true)
         {
+            Invoke("oninvoke", 2);
+
             Debug.Log("3번 끝");
             food.SetActive(false);
             table.SetActive(false);
@@ -33,6 +40,8 @@ public class GameManager : MonoBehaviour
 
         if (coin == true && battery == true && chess == true && bell == true && ring == true && block == true && wagon == false && frisbee == false && boat == false)
         {
+            Invoke("oninvoke", 2);
+
             Debug.Log("6번 끝");
             toy.SetActive(false);
             info_6.SetActive(false);

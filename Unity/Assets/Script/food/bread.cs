@@ -58,7 +58,7 @@ public class bread : MonoBehaviour
 
         //Debug.Log(rigid.position);
 
-        if (Physics.Raycast(ray, 0.05f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.1f, 1 << near_num))
         {
             //Debug.Log("near");
             info.text = "빵";
