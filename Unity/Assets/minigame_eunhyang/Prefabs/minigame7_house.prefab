@@ -17101,13 +17101,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7594639333343897008}
     m_Modifications:
+    - target: {fileID: 271062846932511034, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3735099748687691868, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3779530776453160650, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442439316131727605, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5467775498421230577, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
       propertyPath: m_Name
       value: house
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693961428336110441, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9007441269496767336, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
       propertyPath: m_RootOrder
@@ -17152,6 +17168,10 @@ PrefabInstance:
     - target: {fileID: 9007441269496767336, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9090299901424045875, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd1765d9f8a3f95429353ca1b5136357, type: 3}
