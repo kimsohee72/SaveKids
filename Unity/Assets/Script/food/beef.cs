@@ -10,7 +10,7 @@ public class beef : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, far_num, house;
+    int near_num, far_num, house, num;
     TMP_Text info;
     public GameObject Beef;
     public GameObject text;
@@ -30,6 +30,7 @@ public class beef : MonoBehaviour
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
         house = LayerMask.NameToLayer("House");
+        num = LayerMask.NameToLayer("waiting");
     }
 
     void FixedUpdate()
@@ -60,6 +61,19 @@ public class beef : MonoBehaviour
             target.position = new Vector3(-2.70f, 1.00f, 1.05f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.1f, 1 << num))
+        {
+            target = Beef.GetComponent<Transform>();
+            target.position = new Vector3(-2.70f, 1.00f, 1.05f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
+        }
+        else
+        {
+            target = Beef.GetComponent<Transform>();
+            target.position = new Vector3(-2.70f, 1.00f, 1.05f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
