@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Slicegame_gotomain : MonoBehaviour
+public class gohome : MonoBehaviour
 {
     public GameObject Kniknife;
     void Start()

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ring : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class ring : MonoBehaviour
             gameManager.ring = true;
             list.text = "반지";
             list.color = new Color(0, 0, 0, 1);
+            Ring.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
@@ -57,7 +59,7 @@ public class ring : MonoBehaviour
         {
             setting.Play();
         }
-        else
+        else if (rigid.position.y < -1.0f)
         {
             target = Ring.GetComponent<Transform>();
             target.position = new Vector3(-3.19f, 0.06f, 11.60f);
