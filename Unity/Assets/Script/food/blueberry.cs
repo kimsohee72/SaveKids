@@ -69,7 +69,7 @@ public class blueberry : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
         }
-        else
+        else if(rigid.position.y < 0)
         {
             target = Blueberry.GetComponent<Transform>();
             target.position = new Vector3(-2.94f, 1.00f, 1.21f);

@@ -88,7 +88,7 @@ public class bread : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 180, 0);
             setting.Play();
         }
-        else
+        else if(rigid.position.y < 0)
         {
             target = Bread.GetComponent<Transform>();
             target.position = new Vector3(-2.70f, 1.00f, 1.22f);
