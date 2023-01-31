@@ -8776,7 +8776,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1591412878}
         m_TargetAssemblyTypeName: Slicegame_gotomain, Assembly-CSharp
         m_MethodName: Slicegame_main
         m_Mode: 1
