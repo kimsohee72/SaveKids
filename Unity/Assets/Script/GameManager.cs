@@ -52,6 +52,8 @@ public class GameManager : MonoBehaviour
 
         if (ball == true && book == true && chessgame == true && crayon == true && magnet == true && marble == true && stacker == true && teddybear == true && train == true)
         {
+            Invoke("oninvoke", 2);
+
             Debug.Log("7번 끝");
             toy_7.SetActive(false);
             list_7.SetActive(false);
