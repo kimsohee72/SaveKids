@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class coin : MonoBehaviour
 {
@@ -51,13 +52,14 @@ public class coin : MonoBehaviour
             target = Coin.GetComponent<Transform>();
             target.position = new Vector3(-2.58f, 0.04f, 8.94f);
             target.rotation = Quaternion.Euler(0, 0, 0);
+            Coin.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
             setting.Play();
         }
-        else
+        else if (rigid.position.y < -1.0f)
         {
             target = Coin.GetComponent<Transform>();
             target.position = new Vector3(-2.58f, 0.04f, 8.94f);

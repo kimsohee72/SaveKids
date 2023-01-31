@@ -50,7 +50,7 @@ public class frisbee : MonoBehaviour
         {
             setting.Play();
         }
-        else
+        else if(rigid.position.y < -1.0f)
         {
             target = Frisbee.GetComponent<Transform>();
             target.position = new Vector3(-2.71f, 0.04f, 10.64f);
