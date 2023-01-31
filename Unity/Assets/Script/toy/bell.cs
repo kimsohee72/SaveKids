@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class bell : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class bell : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, num;
+    int near_num, num, house;
     TMP_Text list;
     public GameObject text;
     public GameObject Bell;
@@ -28,6 +29,7 @@ public class bell : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         num = LayerMask.NameToLayer("waiting");
+        house = LayerMask.NameToLayer("House");
     }
 
     void FixedUpdate()
@@ -42,6 +44,7 @@ public class bell : MonoBehaviour
             gameManager.bell = true;
             list.text = "종";
             list.color = new Color(0, 0, 0, 1);
+            Bell.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.2f, 1 << num))
@@ -51,6 +54,16 @@ public class bell : MonoBehaviour
             target.position = new Vector3(-4.05f, 0.21f, 10.35f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.2f, 1 << house))
+        {
+            setting.Play();
+        }
+        else if(rigid.position.y < 0)
+        {
+            target = Bell.GetComponent<Transform>();
+            target.position = new Vector3(-4.05f, 0.21f, 10.35f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

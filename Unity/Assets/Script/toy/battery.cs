@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class battery : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class battery : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num,num;
+    int near_num,num, house;
     TMP_Text list;
     public GameObject text;
     Transform target;
@@ -28,6 +29,7 @@ public class battery : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         num = LayerMask.NameToLayer("waiting");
+        house = LayerMask.NameToLayer("House");
     }
 
     void FixedUpdate()
@@ -42,15 +44,26 @@ public class battery : MonoBehaviour
             gameManager.battery = true;
             list.text = "배터리";
             list.color = new Color(0, 0, 0, 1);
+            Battery.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.2f, 1 << num))
         {
-            Debug.Log("waiting");
+            //Debug.Log("waiting");
             target = Battery.GetComponent<Transform>();
             target.position = new Vector3(-1.30f, 0.11f, 9.63f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.2f, 1 << house))
+        {
+            setting.Play();
+        }
+        else if(rigid.position.y < 0)
+        {
+            target = Battery.GetComponent<Transform>();
+            target.position = new Vector3(-1.30f, 0.11f, 9.63f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

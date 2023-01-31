@@ -39,7 +39,9 @@ public class train : MonoBehaviour
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.train = true;
+            Train.GetComponent<spawn_train>().enabled = false;
             Train.GetComponent<XRGrabInteractable>().enabled = false;
+            //Train.GetComponent<spawn_train>().enabled = false;
         }
     }
 }
