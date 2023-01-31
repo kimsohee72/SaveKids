@@ -48,6 +48,7 @@ public class frisbee : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
+            gameManager.frisbee = false;
             setting.Play();
         }
         else if(rigid.position.y < -1.0f)
