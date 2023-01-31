@@ -178,12 +178,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005870}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -197,6 +191,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -820,12 +820,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005873}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -839,6 +833,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -3536,12 +3536,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005871}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -3555,6 +3549,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -5347,12 +5347,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005869}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -5366,6 +5360,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -6112,12 +6112,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005877}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -6131,6 +6125,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -6461,12 +6461,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005875}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -6480,6 +6474,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -7010,12 +7010,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005874}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -7029,6 +7023,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -11394,12 +11394,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005876}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -11413,6 +11407,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -12329,12 +12329,6 @@ MonoBehaviour:
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 503005872}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -12348,6 +12342,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -12702,10 +12702,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<\uC120\uBC18\uC5D0 \uC7A5\uB09C\uAC10 \uC815\uB9AC\uD558\uAE30>\n\n/*\uD53C\uB4DC\uBC31*/"
+  m_text: "<\uC548\uC804\uD55C \uC7A5\uB09C\uAC10 \uBCF4\uAD00 \uBC29\uBC95\uC740?>\n\n\uC544\uC774\uC5D0\uAC8C
+    \uC704\uD5D8\uD55C \uBB3C\uAC74\uC740 \uC544\uC774\uC758 \uD0A4\uC5D0 \uB2FF\uC9C0
+    \uC54A\uB294 \uACF3\uC5D0 \uB450\uC5B4\uC57C \uD574\uC694!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
-  m_sharedMaterial: {fileID: 7338381612882335306, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6d13cf6388f99da45b6470452a85e3c3, type: 2}
+  m_sharedMaterial: {fileID: -5589150527890715317, guid: 6d13cf6388f99da45b6470452a85e3c3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

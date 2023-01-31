@@ -4049,12 +4049,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<\uC544\uC774\uAC00 \uC785\uC548\uC758 \uC774\uBB3C\uC9C8\uC744 \uBC49\uC9C0
-    \uC54A\uC744 \uB550?>\n\n-> \uC544\uC774\uAC00 \uB180\uB77C\uC9C0 \uC54A\uAC8C
-    \uD558\uBA70\n\uC774\uBB3C\uC9C8\uC744 \uCC28\uBD84\uD788 \uC81C\uAC70\uD574\uC57C\uD569\uB2C8\uB2E4
-    !\n"
+    \uC54A\uC744 \uB550?>\n\n\uC544\uC774\uAC00 \uB180\uB77C\uC9C0 \uC54A\uAC8C \uD558\uBA70\n\uC774\uBB3C\uC9C8\uC744
+    \uCC28\uBD84\uD788 \uC81C\uAC70\uD574\uC57C\uD569\uB2C8\uB2E4 !\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d13cf6388f99da45b6470452a85e3c3, type: 2}
-  m_sharedMaterial: {fileID: 7338381612882335306, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
+  m_sharedMaterial: {fileID: -5589150527890715317, guid: 6d13cf6388f99da45b6470452a85e3c3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4078,8 +4077,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.3
-  m_fontSizeBase: 0.3
+  m_fontSize: 0.28
+  m_fontSizeBase: 0.28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4117,7 +4116,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -3.212597, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1148301115
@@ -4670,7 +4669,7 @@ PrefabInstance:
     - target: {fileID: 1426003111783072955, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a16c91ca6a9a60b4596b57635c8a3e71, type: 3}
+      objectReference: {fileID: 21300000, guid: b3a65e5da221b5c49bb7e3733765f4e5, type: 3}
     - target: {fileID: 3842264537706492728, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
