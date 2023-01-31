@@ -10,7 +10,7 @@ public class banana : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, far_num, house;
+    int near_num, far_num, house, num;
     TMP_Text info;
     public GameObject Banana;
     public GameObject text;
@@ -30,6 +30,7 @@ public class banana : MonoBehaviour
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
         house = LayerMask.NameToLayer("House");
+        num = LayerMask.NameToLayer("waiting");
     }
 
     void FixedUpdate()
@@ -60,6 +61,19 @@ public class banana : MonoBehaviour
             target.position = new Vector3(-3.13f, 1.00f, 1.00f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.03f, 1 << num))
+        {
+            target = Banana.GetComponent<Transform>();
+            target.position = new Vector3(-3.13f, 1.00f, 1.00f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
+        }
+        else
+        {
+            target = Banana.GetComponent<Transform>();
+            target.position = new Vector3(-3.13f, 1.00f, 1.00f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

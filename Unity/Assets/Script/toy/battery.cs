@@ -9,7 +9,7 @@ public class battery : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num,num;
+    int near_num,num, house;
     TMP_Text list;
     public GameObject text;
     Transform target;
@@ -28,6 +28,7 @@ public class battery : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         num = LayerMask.NameToLayer("waiting");
+        house = LayerMask.NameToLayer("House");
     }
 
     void FixedUpdate()
@@ -51,6 +52,16 @@ public class battery : MonoBehaviour
             target.position = new Vector3(-1.30f, 0.11f, 9.63f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.2f, 1 << house))
+        {
+            setting.Play();
+        }
+        else
+        {
+            target = Battery.GetComponent<Transform>();
+            target.position = new Vector3(-1.30f, 0.11f, 9.63f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

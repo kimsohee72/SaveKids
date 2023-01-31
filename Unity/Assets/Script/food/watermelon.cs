@@ -10,7 +10,7 @@ public class watermelon : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, far_num, house;
+    int near_num, far_num, house, num;
     TMP_Text info;
     public GameObject Watermelon;
     public GameObject text;
@@ -30,6 +30,7 @@ public class watermelon : MonoBehaviour
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
         house = LayerMask.NameToLayer("House");
+        num = LayerMask.NameToLayer("waiting");
     }
 
     void FixedUpdate()
@@ -38,14 +39,14 @@ public class watermelon : MonoBehaviour
 
         //Debug.Log(rigid.position);
 
-        if (Physics.Raycast(ray, 0.01f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.05f, 1 << near_num))
         {
             //Debug.Log("near");
             info.text = "수박";
             info.color = new Color(1, 0, 0, 1);
             setting.Play();
         }
-        else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
+        else if (Physics.Raycast(ray, 0.05f, 1 << far_num))
         {
            //Debug.Log("far");
             info.text = "수박";
@@ -60,6 +61,19 @@ public class watermelon : MonoBehaviour
             target.position = new Vector3(-3.35f, 1.00f, 1.01f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.1f, 1 << num))
+        {
+            target = Watermelon.GetComponent<Transform>();
+            target.position = new Vector3(-3.35f, 1.00f, 1.01f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
+            setting.Play();
+        }
+        else
+        {
+            target = Watermelon.GetComponent<Transform>();
+            target.position = new Vector3(-3.35f, 1.00f, 1.01f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

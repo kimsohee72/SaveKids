@@ -10,7 +10,7 @@ public class bread : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, far_num, house;
+    int near_num, far_num, house, num;
     TMP_Text info; 
     public GameObject Bread;
     public GameObject text;
@@ -49,23 +49,18 @@ public class bread : MonoBehaviour
         near_num = LayerMask.NameToLayer("near");
         far_num = LayerMask.NameToLayer("far");
         house = LayerMask.NameToLayer("House");
+        num = LayerMask.NameToLayer("waiting");
     }
 
     void FixedUpdate()
     {
-        //Debug.Log(ray);
-        //ray = new Ray(rigid.position, Vector3.down);
         Debug.DrawRay(rigid.position, Vector3.down * 0.1f, new Color(0, 1, 0));
 
         //Debug.Log(rigid.position);
 
-        //if (Physics.Raycast(ray, 0.01f, worldLayer))
         if (Physics.Raycast(ray, 0.05f, 1 << near_num))
         {
             //Debug.Log("near");
-            //correct_near.SetActive(true);
-            //wrong_near.SetActive(false);
-            //near_clicked();
             info.text = "빵";
             info.color = new Color(0, 0, 1, 1);
             gameManager.bread = true;
@@ -75,9 +70,6 @@ public class bread : MonoBehaviour
         else if (Physics.Raycast(ray, 0.05f, 1 << far_num))
         {
             //Debug.Log("far");
-            //correct_near.SetActive(false);
-            //wrong_near.SetActive(true);
-            //far_clicked();
             info.text = "빵";
             info.color = new Color(1, 0, 0, 1);
             setting.Play();
@@ -89,7 +81,18 @@ public class bread : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 180, 0);
             setting.Play();
         }
-
-        //Debug.Log(info.color);
+        else if (Physics.Raycast(ray, 0.1f, 1 << num))
+        {
+            target = Bread.GetComponent<Transform>();
+            target.position = new Vector3(-2.70f, 1.00f, 1.22f);
+            target.rotation = Quaternion.Euler(0, 180, 0);
+            setting.Play();
+        }
+        else
+        {
+            target = Bread.GetComponent<Transform>();
+            target.position = new Vector3(-2.70f, 1.00f, 1.22f);
+            target.rotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 }

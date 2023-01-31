@@ -9,7 +9,7 @@ public class ring : MonoBehaviour
     Rigidbody rigid;
     public LayerMask worldLayer;
     Ray ray;
-    int near_num, num;
+    int near_num, num, house;
     TMP_Text list;
     public GameObject text;
     Transform target;
@@ -28,6 +28,7 @@ public class ring : MonoBehaviour
 
         near_num = LayerMask.NameToLayer("near");
         num = LayerMask.NameToLayer("waiting");
+        house = LayerMask.NameToLayer("House");
     }
 
     void FixedUpdate()
@@ -36,7 +37,7 @@ public class ring : MonoBehaviour
 
         //Debug.Log(rigid.position);
 
-        if (Physics.Raycast(ray, 0.05f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.1f, 1 << near_num))
         {
             //Debug.Log("good");
             gameManager.ring = true;
@@ -51,6 +52,16 @@ public class ring : MonoBehaviour
             target.position = new Vector3(-3.19f, 0.06f, 11.60f);
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
+        }
+        else if (Physics.Raycast(ray, 0.1f, 1 << house))
+        {
+            setting.Play();
+        }
+        else
+        {
+            target = Ring.GetComponent<Transform>();
+            target.position = new Vector3(-3.19f, 0.06f, 11.60f);
+            target.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
