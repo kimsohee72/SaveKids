@@ -58,7 +58,7 @@ public class bread : MonoBehaviour
 
         //Debug.Log(rigid.position);
 
-        if (Physics.Raycast(ray, 0.05f, 1 << near_num))
+        if (Physics.Raycast(ray, 0.1f, 1 << near_num))
         {
             //Debug.Log("near");
             info.text = "빵";
@@ -88,7 +88,7 @@ public class bread : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 180, 0);
             setting.Play();
         }
-        else
+        else if(rigid.position.y < 0)
         {
             target = Bread.GetComponent<Transform>();
             target.position = new Vector3(-2.70f, 1.00f, 1.22f);

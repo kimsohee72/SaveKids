@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.60577977, g: 0.549583, b: 0.6456569, a: 1}
+  m_IndirectSpecularColor: {r: 0.6055179, g: 0.5493043, b: 0.6454642, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1265,7 +1265,7 @@ PrefabInstance:
     - target: {fileID: 1426003111783072955, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a16c91ca6a9a60b4596b57635c8a3e71, type: 3}
+      objectReference: {fileID: 21300000, guid: 1d13535990b2b6c478f4bf508172c8e7, type: 3}
     - target: {fileID: 3842264537706492728, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1634,7 +1634,7 @@ PrefabInstance:
     - target: {fileID: 1426003111783072955, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a16c91ca6a9a60b4596b57635c8a3e71, type: 3}
+      objectReference: {fileID: 21300000, guid: 0b82e5874584967468c6c4c49dc37e99, type: 3}
     - target: {fileID: 3842264537706492728, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 5
@@ -4049,12 +4049,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<\uC544\uC774\uAC00 \uC785\uC548\uC758 \uC774\uBB3C\uC9C8\uC744 \uBC49\uC9C0
-    \uC54A\uC744 \uB550?>\n\n-> \uC544\uC774\uAC00 \uB180\uB77C\uC9C0 \uC54A\uAC8C
-    \uD558\uBA70\n\uC774\uBB3C\uC9C8\uC744 \uCC28\uBD84\uD788 \uC81C\uAC70\uD574\uC57C\uD569\uB2C8\uB2E4
-    !\n"
+    \uC54A\uC744 \uB550?>\n\n\uC544\uC774\uAC00 \uB180\uB77C\uC9C0 \uC54A\uAC8C \uD558\uBA70\n\uC774\uBB3C\uC9C8\uC744
+    \uCC28\uBD84\uD788 \uC81C\uAC70\uD574\uC57C\uD569\uB2C8\uB2E4 !\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
-  m_sharedMaterial: {fileID: 7338381612882335306, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6d13cf6388f99da45b6470452a85e3c3, type: 2}
+  m_sharedMaterial: {fileID: -5589150527890715317, guid: 6d13cf6388f99da45b6470452a85e3c3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4078,8 +4077,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.3
-  m_fontSizeBase: 0.3
+  m_fontSize: 0.28
+  m_fontSizeBase: 0.28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4368,8 +4367,8 @@ MonoBehaviour:
     \uC54A\uC744 \uB550?>\n\n\uC544\uC774\uC758 \uC785\uC548\uC758 \uC774\uBB3C\uC9C8\uC744
     \uC81C\uAC70\uD558\uBA74 \uC131\uACF5!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
-  m_sharedMaterial: {fileID: 7338381612882335306, guid: fca9c835e0b38164f9f8cb729ff0108c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ccec347676cd3d6409f138b837b323d0, type: 2}
+  m_sharedMaterial: {fileID: -5589150527890715317, guid: ccec347676cd3d6409f138b837b323d0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4393,8 +4392,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.3
-  m_fontSizeBase: 0.3
+  m_fontSize: 0.28
+  m_fontSizeBase: 0.28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4670,7 +4669,7 @@ PrefabInstance:
     - target: {fileID: 1426003111783072955, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a16c91ca6a9a60b4596b57635c8a3e71, type: 3}
+      objectReference: {fileID: 21300000, guid: b3a65e5da221b5c49bb7e3733765f4e5, type: 3}
     - target: {fileID: 3842264537706492728, guid: d17d2d524d33dd3469a09ccde0b94159, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -5755,7 +5754,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041570830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.787}
+  m_LocalPosition: {x: 0, y: 0, z: 7.422}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5765,7 +5764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 2.66, y: 1.903}
+  m_AnchoredPosition: {x: 3.12, y: 3.013}
   m_SizeDelta: {x: 0.8, y: 0.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2041570832
@@ -6744,7 +6743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1042285513417254053, guid: e8b4cc2e60489d34499e36222969ba20, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2552120554886935684, guid: e8b4cc2e60489d34499e36222969ba20, type: 3}
       propertyPath: m_LocalScale.x
@@ -6838,6 +6837,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 162.362
       objectReference: {fileID: 0}
+    - target: {fileID: 2967632570274127829, guid: e8b4cc2e60489d34499e36222969ba20, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2d3e1cdace344244a9502d73b6bbaf98, type: 3}
     - target: {fileID: 4206864242933085498, guid: e8b4cc2e60489d34499e36222969ba20, type: 3}
       propertyPath: m_Name
       value: minigame7_assets
@@ -6846,6 +6849,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6268356613491565979, guid: e8b4cc2e60489d34499e36222969ba20, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2d3e1cdace344244a9502d73b6bbaf98, type: 3}
     - target: {fileID: 7038411740074269667, guid: e8b4cc2e60489d34499e36222969ba20, type: 3}
       propertyPath: m_InteractionManager
       value: 

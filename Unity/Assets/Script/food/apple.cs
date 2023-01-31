@@ -69,7 +69,7 @@ public class apple : MonoBehaviour
             target.rotation = Quaternion.Euler(0, 0, 0);
             setting.Play();
         }
-        else
+        else if(rigid.position.y < 0)
         {
             target = Apple.GetComponent<Transform>();
             target.position = new Vector3(-3.12f, 1.00f, 1.20f);
