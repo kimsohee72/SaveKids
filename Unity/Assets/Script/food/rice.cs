@@ -48,7 +48,7 @@ public class rice : MonoBehaviour
             Rice.GetComponent<XRGrabInteractable>().enabled = false;
             setting.Play();
         }
-        else if (Physics.Raycast(ray, 0.01f, 1 << far_num))
+        else if (Physics.Raycast(ray, 0.05f, 1 << far_num))
         {
             //Debug.Log("far");
             info.text = "주먹밥";
