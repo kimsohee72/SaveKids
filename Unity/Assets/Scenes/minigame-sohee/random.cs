@@ -12,6 +12,7 @@ public class random : MonoBehaviour
     public GameObject baby2;
     public GameObject baby3;
     public GameObject button;
+    public GameObject button1;
     public GameObject table;
     public GameObject end;
     public int a;
@@ -43,7 +44,10 @@ public class random : MonoBehaviour
                 baby2.SetActive(false);
                 baby1.SetActive(false);
                 baby3.SetActive(false);
-                button.SetActive(false);
+                if (n == 1)
+                    button.SetActive(false);
+                if (n == 1)
+                    button1.SetActive(false);
                 table.SetActive(false);
                 end.SetActive(true);
                 
