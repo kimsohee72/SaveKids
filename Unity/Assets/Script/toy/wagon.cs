@@ -12,6 +12,7 @@ public class wagon : MonoBehaviour
     Transform target;
     public GameObject Wagon;
     public AudioSource setting;
+    
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class wagon : MonoBehaviour
         {
             gameManager.wagon = true;
             setting.Play();
+
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
         {
@@ -50,7 +52,7 @@ public class wagon : MonoBehaviour
         {
             setting.Play();
         }
-        else
+        else if(rigid.position.y < -1.0f)
         {
             target = Wagon.GetComponent<Transform>();
             target.position = new Vector3(-4.35f, 0.05f, 9.32f);
