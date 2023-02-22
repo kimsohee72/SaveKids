@@ -39,7 +39,7 @@ public class chessgame : MonoBehaviour
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.chessgame = true;
-            Chessgame.GetComponent<spawn_chess>().enabled = false;
+          
             Chessgame.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
