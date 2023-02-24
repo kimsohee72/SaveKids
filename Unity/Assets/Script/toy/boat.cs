@@ -34,6 +34,7 @@ public class boat : MonoBehaviour
 
         if (Physics.Raycast(ray, 0.1f, 1 << near_num))
         {
+            gameManager.boat = true;
             setting.Play();
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << num))
@@ -46,6 +47,7 @@ public class boat : MonoBehaviour
         }
         else if (Physics.Raycast(ray, 0.1f, 1 << house))
         {
+            gameManager.boat = false;
             setting.Play();
         }
         else if(rigid.position.y < -1.0f)

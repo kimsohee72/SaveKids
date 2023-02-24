@@ -41,7 +41,7 @@ public class ball : MonoBehaviour
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.ball = true;
-            Ball.GetComponent<spawn_ball>().enabled = false;
+            
             Ball.GetComponent<XRGrabInteractable>().enabled = false;
             
         }

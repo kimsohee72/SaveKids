@@ -35,11 +35,11 @@ public class marble : MonoBehaviour
         if (Physics.Raycast(ray, 0.1f, 1 << high))
         {
             //Debug.Log("high");
-            list.text = "작은 구슬";
+            list.text = "구슬";
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.marble = true;
-            Marble.GetComponent<spawn_dotball>().enabled = false;
+          
             Marble.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }

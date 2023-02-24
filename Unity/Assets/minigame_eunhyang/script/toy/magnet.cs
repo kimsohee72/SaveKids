@@ -39,7 +39,7 @@ public class magnet : MonoBehaviour
             list.color = new Color(0, 0, 0, 1);
 
             gameManager.magnet = true;
-            Magnet.GetComponent<spawn_magnet>().enabled = false;
+           
             Magnet.GetComponent<XRGrabInteractable>().enabled = false;
         }
     }
