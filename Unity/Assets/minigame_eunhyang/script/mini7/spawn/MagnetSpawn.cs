@@ -18,11 +18,7 @@ public class MagnetSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Transform_.position.y < 0.8f
-            || Transform_.position.x < -4.1f
-            || Transform_.position.x > -1.5f
-            || Transform_.position.z > 7.0f
-            || Transform_.position.z < 4.5f)
+        if (Transform_.position.y < -0.8f)
         {
             Debug.Log("NO");
             Transform_.position = firstLocation;
