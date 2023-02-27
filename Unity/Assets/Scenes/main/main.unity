@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 845330690}
-  m_IndirectSpecularColor: {r: 0.60577905, g: 0.5495826, b: 0.6456542, a: 1}
+  m_Sun: {fileID: 2331875077053151164}
+  m_IndirectSpecularColor: {r: 0.605517, g: 0.5493037, b: 0.64546186, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1128,7 +1128,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4137,6 +4137,11 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!108 &2331875077053151164 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 2331875077489673507, guid: ab8b4f8d76c0482428e1daaa5b594f08, type: 3}
+  m_PrefabInstance: {fileID: 2331875077053151161}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8493996033485148610
 PrefabInstance:
   m_ObjectHideFlags: 0
