@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 1743923925}
-  m_IndirectSpecularColor: {r: 0.60577905, g: 0.5495826, b: 0.6456542, a: 1}
+  m_Sun: {fileID: 3730300550795520030}
+  m_IndirectSpecularColor: {r: 0.605517, g: 0.5493037, b: 0.64546186, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6249,7 +6249,7 @@ RectTransform:
   m_Children:
   - {fileID: 1458984209}
   m_Father: {fileID: 2041328589}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9216,7 +9216,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -10819,8 +10819,8 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1176485034}
-  - {fileID: 1831486682}
   - {fileID: 985071973}
+  - {fileID: 1831486682}
   - {fileID: 46155678}
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -12573,6 +12573,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62b973f0325f28e4881af50d1fe37138, type: 3}
+--- !u!108 &3730300550795520030 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 3730300551432329863, guid: 62b973f0325f28e4881af50d1fe37138, type: 3}
+  m_PrefabInstance: {fileID: 3730300550795520029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4270137407717550261
 GameObject:
   m_ObjectHideFlags: 0
