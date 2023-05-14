@@ -66,7 +66,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Take 2022-11-24 01_18_14 PM
+  m_Name: scene1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -93,7 +93,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Take 2022-11-24 01_18_14 PM
+  m_Name: scene4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -120,7 +120,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Take 2022-11-24 01_18_14 PM
+  m_Name: scene2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -172,7 +172,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Take 2022-11-24 01_18_14 PM
+  m_Name: scene3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -323,7 +323,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Take 2022-11-24 01_18_14 PM
+  m_Name: scene0
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
