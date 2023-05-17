@@ -41,4 +41,12 @@ public class click : MonoBehaviour
     {
         SceneManager.LoadScene("Minigame_eunhyang7");
     }
+    public void SceneChange8()
+    {
+        SceneManager.LoadScene("test_Sohee");
+    }
+    public void SceneChange9()
+    {
+        SceneManager.LoadScene("test_JE");
+    }
 }
