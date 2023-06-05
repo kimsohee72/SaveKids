@@ -9,7 +9,7 @@ public class spin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rot = nurse.transform.rotation.y + 90;
+        rot = nurse.transform.rotation.y+180;
         Debug.Log(rot);
     }
 
