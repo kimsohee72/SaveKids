@@ -43,7 +43,7 @@ public class click : MonoBehaviour
     }
     public void SceneChange8()
     {
-        SceneManager.LoadScene("test_Sohee");
+        SceneManager.LoadScene("test_eunhyang");
     }
     public void SceneChange9()
     {
